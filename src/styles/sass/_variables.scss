@@ -1,0 +1,55 @@
+// colors ;
+$bg-color-1: #ffffff;
+$bg-color-2: #b7b7b7;
+$bg-color-3: #474d55;
+$bg-color-4: #ac9a6b;
+$bg-color-5: #606060;
+$bg-color-6: #000000;
+$bg-color-7: #f5f6f7;
+$bg-color-8: #707070;
+$bg-color-9: #000032;
+$bg-color-10: #9f8d60;
+$bg-color-11: #ededed;
+
+
+$text-color-1: #2e2e2d;
+$text-color-2: #ffffff;
+$text-color-3: #474d55;
+$text-color-4: #ac9a6b;
+$text-color-5: #eff0f0;
+$text-color-6: #b7b7b7;
+$text-color-7: #b7984c;
+
+
+
+// media 
+$desktop-width: 1220px;
+$large-tablet-width: 1030px;
+$mobile-width-only: 767px;
+$large-mobile: 1030px;
+
+// media for max-width
+
+$desktop-max-width: 1199.98px;
+$tablet-max-width: 991.98px;
+$small-tablet-max-width: 767.98px;
+$phone-max-width: 575.98px;
+$small-phone-max-width: 479.98px;
+// media for min-width
+
+$desktop-min-width: 1200px;
+$tablet-min-width: 992px;
+$small-tablet-min-width: 768px;
+$phone-min-width: 576px;
+
+// font-size
+$font-size-1: 12px;
+$font-size-2: 14px;
+$font-size-3: 16px;
+$font-size-4: 18px;
+$font-size-5: 24px;
+
+// z-index
+//  100 - header
+// > 100 - popups
+// < 100 - content

@@ -1,0 +1,97 @@
+// галерея на турах странах и городах
+
+.list__photo__cities-wrap {
+  margin: 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-tablet-max {
+    align-items: stretch;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: auto;
+  }
+}
+
+.list__cities__photo__cities {
+  width: 100%;
+  margin: 0;
+  max-width: 1178px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include media-desktop-max {
+    max-width: 790px;
+    margin: -20px 0 0;
+  }
+
+  @include media-tablet-max {
+    margin: 0 auto 0;
+    padding: 0 10px;
+    max-width: none;
+    width: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.list__item__photo_wrap {
+  position: relative;
+}
+
+.list__item__photo-cities {
+  margin: 0 4px;
+  width: calc(16.66% - 8px);
+  max-height: 150px;
+  position: relative;
+  display: flex;
+
+  @include media-desktop-max {
+    width: calc(33.333% - 20px);
+    max-height: 200px;
+    margin: 20px 10px 0;
+  }
+
+  @include media-tablet-max {
+    width: 190px;
+    max-height: 200px;
+    margin: 0 10px 0;
+    flex-shrink: 0;
+  }
+}
+
+.list__item__link__photo {
+  height: 100%;
+  &:hover .tour-gallery__zoom,
+  &:focus .tour-gallery__zoom {
+    opacity: 1;
+  }
+}
+
+
+//Контент страницы
+.city-content__txt__wrap {
+  margin: 60px auto 34px;
+  max-width: 810px;
+  width: 100%;
+  font-size: $font-size-3;
+  padding: 0 20px;
+
+  @include media-desktop-max {
+    margin: 40px auto 30px;
+  }
+
+  @include media-desktop-max {
+    margin: 30px auto 30px;
+  }
+}
+
+.star-hotel {
+  padding: 0 0 20px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}

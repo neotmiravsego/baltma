@@ -1,0 +1,82 @@
+.navigation__wrap {
+  max-width: 100%;
+}
+.navigation__cities-wrap {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+
+
+  .navgitaion__list__cities {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-start;
+
+    .navigation__list__item {
+      padding: 0 35px;
+
+      @include  media-small-tablet-max {
+        padding: 0 24px;
+      }
+
+      .navigation__link__item {
+        padding: 0 0 5.5px;
+
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: transparent;
+        color: $text-color-6;
+        display: block;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+
+        fill: $text-color-6;
+
+        outline-color: transparent;
+
+        @include media-small-tablet-max {
+          padding: 0 0 2px;
+          white-space: nowrap;
+        }
+
+        &:hover {
+          @media all and (min-width: 992px) {
+            border-color:  $text-color-4;
+            color: $text-color-4;
+            fill:  $text-color-4;
+          }
+        }
+        &.active {
+          border-color:  $text-color-4;
+          color: $text-color-4;
+          fill:  $text-color-4;
+        }
+      }
+      .navigation__link__hotel {
+        display: flex;
+        align-items: center;
+
+        border-style: dashed;
+        border-color: $text-color-6;
+        text-decoration: none;
+
+        .icon__hotel {
+          fill: inherit;
+          flex-shrink: 0;
+          height: 12px;
+          width: auto;
+        }
+        .nav__link__hotel__txt {
+          margin: 0;
+          padding-right: 5px;
+          flex-shrink: 0;
+        }
+
+      }
+
+    }
+  }
+}

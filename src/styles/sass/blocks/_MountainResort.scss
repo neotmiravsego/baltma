@@ -1,0 +1,476 @@
+
+.photo-archive__list__item {
+  display: flex;
+  width: 680px;
+  max-height: 480px;
+  height: 100%;
+  @include media-desktop-max {
+    width: 450px;
+    max-height: 400px;
+  }
+  @include mobile-width-only {
+    width: 300px;
+    max-height: 300px;
+  }
+  @include media-mobile-max {
+    width: 224px;
+    max-height: 160px;
+  }
+}
+
+.photo-archive__item__img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.curorts {
+  margin-top: 15px;
+}
+
+.type-rest_banner-wrap {
+  position: relative;
+  height: 81vh;
+}
+
+.type-rest_banner-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.type-rest__banner-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top center;
+}
+
+// resort
+.resort-cities__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.resort-cities__list {
+  padding-left: 20px;
+}
+
+.resort-cities__list__item {
+  .resort-cities__link {
+    text-decoration: none;
+  }
+
+  .resort-cities__link:hover {
+    color: $text-color-4;
+  }
+}
+
+.resort-cities-container {
+  width: 100%;
+  @include section-p();
+}
+
+.resort-cities__list-wrap {
+  margin-right: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.resort-cities__list-wrap__last {
+  margin-right: 0;
+  //padding: 0 20px;
+}
+
+.resort-cities-list__container {
+  width: 100%;
+
+
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  //
+  //@include media-desktop-max {
+  //  padding-bottom: 10px;
+  //  justify-content: flex-start;
+  //
+  //  overflow: hidden;
+  //}
+}
+
+.resort-cities-wrap__lists {
+  display: flex;
+  align-items: flex-start;
+  @include mobile-width-only {
+    width: 350px;
+  }
+}
+
+//// Популярные горнолыжные туры
+//.main__container-directions-populars {
+//  margin: 0 auto 60px;
+//
+//  width: 100%;
+//  max-width: 1170px;
+//
+//  display: flex;
+//  flex-wrap: wrap;
+//  @include mobile-width-only {
+//    margin-bottom: 34px;
+//  }
+//
+//  .populars__directions__title {
+//    margin: 0;
+//    font-size: 24px;
+//    @include mobile-width-only {
+//      font-size: 20px;
+//    }
+//  }
+//
+//  .populars__directions__title-wrap {
+//    margin-bottom: 29px;
+//    width: 100%;
+//    text-transform: uppercase;
+//    text-align: center;
+//    color: $text-color-4;
+//  }
+//
+//  .populars__directions {
+//    display: flex;
+//    width: 100%;
+//    max-width: 1170px;
+//    @include mobile-width-only {
+//      margin-bottom: 0;
+//    }
+//
+//    .populars__directions__card {
+//      color: $text-color-2;
+//      z-index: 1;
+//
+//      &:hover .populars__directions__card__button {
+//        background-color: $bg-color-4;
+//        border-color: $bg-color-4;
+//        outline-color: transparent;
+//        color: $text-color-2;
+//      }
+//
+//      @include mobile-width-only {
+//        height: 280px;
+//      }
+//
+//      .populars__directions__title {
+//        font-weight: bold;
+//        @include mobile-width-only {
+//          font-size: 20px;
+//        }
+//      }
+//
+//      .populars__directions__description__title {
+//        margin-bottom: 35px;
+//        font-weight: 500;
+//        font-size: 16px;
+//        @include mobile-width-only {
+//          margin-bottom: 39px;
+//        }
+//      }
+//
+//      .populars__directions__description {
+//        @include mobile-width-only {
+//          max-width: 190px;
+//        }
+//      }
+//    }
+//
+//    .populars__directions__left-bar {
+//      margin-right: 30px;
+//
+//      width: 50%;
+//      height: 482.63px;
+//      @include mobile-width-only {
+//        width: 100%;
+//        margin: 0 0 35px;
+//        height: 236px;
+//      }
+//
+//      .populars__directions__card {
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//        flex-direction: column;
+//
+//        text-align: center;
+//        height: 100%;
+//      }
+//    }
+//
+//    .populars__directions__right-bar {
+//      width: 50%;
+//      @include mobile-width-only {
+//        margin: 0;
+//        width: 100%;
+//      }
+//
+//      .populars__directions__card {
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//        flex-direction: column;
+//        height: 223.76px;
+//        width: 100%;
+//        text-align: center;
+//
+//        &:first-child {
+//          margin-bottom: 35.2px;
+//        }
+//
+//        @include mobile-width-only {
+//          height: 236px;
+//        }
+//      }
+//    }
+//
+//    .populars__directions__card__button {
+//      padding: 11px 47px 13px;
+//
+//      border: solid 1px white;
+//      border-radius: 5px;
+//      outline: none;
+//
+//      background: transparent;
+//      text-transform: uppercase;
+//      color: $text-color-2;
+//      font-size: 16px;
+//
+//      &:hover,
+//      &:focus {
+//        background-color: $bg-color-4;
+//        border-color: $bg-color-4;
+//        outline-color: transparent;
+//        color: $text-color-2;
+//      }
+//    }
+//  }
+//}
+//
+//.populars__directions__card {
+//  position: relative;
+//
+//  .populars__directions__img {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//
+//    display: block;
+//    width: 100%;
+//    height: 100%;
+//
+//    -o-object-fit: cover;
+//    object-fit: cover;
+//    -o-object-position: center;
+//    object-position: center;
+//    z-index: -2;
+//    border-radius: 5px;
+//  }
+//
+//  .populars__directions__title {
+//    margin-bottom: 2px;
+//  }
+//}
+
+.photo-archive__mountains__container {
+  padding: 40px 0 70px;
+  position: relative;
+  background: $bg-color-9;
+}
+
+.photo-archive__list {
+  display: flex;
+}
+
+.photo-archive__content {
+  margin-bottom: 35px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: $font-size-2;
+  font-weight: 700;
+  color: $text-color-4;
+
+  p {
+    margin: 0;
+  }
+}
+
+.photo-archive__list-wrap {
+  width: 100%;
+  overflow: hidden;
+  @include mobile-width-only {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  @include media-mobile-max {
+    height: 100%;
+    // max-height: 160px;
+  }
+}
+
+.photo-archive__container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.photo-archive__slide-arrow-wrap {
+  position: absolute;
+  top: 30px;
+  right: 135px;
+  @include mobile-width-only {
+    display: none;
+  }
+}
+
+.photo-archive__slide__left {
+  margin-right: 18px;
+}
+
+.cities-austria__img-wrap {
+  margin-bottom: 6.7px;
+}
+
+.main__all__directions__title {
+  margin: 0;
+
+  font-size: $font-size-5;
+}
+
+// slider
+
+.photo-archive__title-bottom {
+  font-size: 16px;
+}
+
+.photo-archive__list .slick-next svg {
+  transform: rotate(180deg);
+}
+
+.photo-archive__list .slick-next::before,
+.photo-archive__list .slick-prev::before {
+  display: none;
+}
+
+.photo-archive__list .slick-next svg,
+.photo-archive__list .slick-prev svg {
+  width: auto;
+  height: auto;
+  max-width: 45px;
+  max-height: 102px;
+
+  stroke: $bg-color-1;
+  stroke-width: 2px;
+}
+
+.slick-prev {
+  top: calc(-20px);
+}
+
+.slick-next {
+  top: -200px;
+  right: 0;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.photo-archive__list .slick-next svg,
+.photo-archive__list .slick-prev svg {
+  @include large-mobile {
+    display: none;
+  }
+}
+
+.photo-archive__list.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.photo-archive__list .slick-dots {
+  margin: 0 auto;
+  padding: 0;
+
+  position: absolute;
+  top: calc(100% + 60px);
+  left: 50%;
+  bottom: auto;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 770px;
+  left: 50%;
+  list-style: none;
+}
+
+.photo-archive__list .slick-dots li {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  padding: 0;
+
+  &.slick-active button {
+    background: $bg-color-1;
+    opacity: 1;
+  }
+}
+
+.photo-archive__list .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 0;
+  outline: 0;
+  cursor: pointer;
+  color: transparent;
+  background: 0 0;
+  font-size: 0;
+
+  border: 1px solid $bg-color-1;
+  border-radius: 50%;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.photo-archive__list .slick-dots li button:before {
+  display: none;
+}
+
+.photo-archive__list .slick-slide:focus,
+.photo-archive__list .slick-slide:focus {
+  outline-color: transparent;
+}
+
+.photo-archive__list .slick-list {
+  width: 100%;
+  padding-right: calc((100vw - 680px) / 2);
+  padding-left: calc((100vw - 680px) / 2);
+}

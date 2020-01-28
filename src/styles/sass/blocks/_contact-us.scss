@@ -1,0 +1,32 @@
+.contact-us {
+  @include section-p();
+  //padding-bottom: 40px;
+  background-color: $bg-color-9;
+}
+
+.contact-us__sub-title {
+  color: $text-color-2;
+}
+
+.contact-us__wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include  media-mobile-max {
+    padding: 20px;
+  }
+}
+
+.contact-us__form {
+  width: 100%;
+}
+
+.contact-us__form .form__checkbox-wrapper {
+  justify-content: center;
+}
+
+.contact-us__form .form__checkbox-label,
+.contact-us__form .form__button {
+  width: auto;
+}

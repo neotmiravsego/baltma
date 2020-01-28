@@ -1,0 +1,3473 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <include src="src/html-const/head.html"></include>
+    <title>Главная</title>
+  </head>
+
+  <body>
+    <include src="src/html-const/header.html"></include>
+    <main>
+      <section class="banner">
+        <div
+          class="banner__parallax js-parallax" style="background-image:url('local/templates/site/img/main-banner/europe.jpg')" data-src-desktop="local/templates/site/img/main-banner/europe.jpg" data-src-mobile="local/templates/site/img/main-banner/europe-m.jpg">
+<!--          data-parallax="scroll"-->
+<!--          data-mirror-container=".banner__parallax"-->
+<!--          data-image-src="local/templates/site/img/main-banner/europe.jpg"-->
+<!--          data-position="center top"-->
+        </div>
+        <div class="container">
+          <div class="banner__main">
+            <div class="banner__wrapper-title">
+              <div class="banner__image-block">
+                <svg class="banner__image" width="127" height="103">
+                  <use
+                    xlink:href="local/templates/site/img/sprite.svg#europe"
+                  />
+                </svg>
+              </div>
+              <h1 class="banner__title">В самом сердце Европы</h1>
+              <p class="banner__sub-title">
+                Тур на маршрутах исторических железных дорог Европы.
+              </p>
+            </div>
+            <div class="banner__wrapper-info">
+              <ul class="banner__info-list">
+                <li class="banner__info-item">
+                  <p class="banner__info-title">18 дней</p>
+                  <p class="banner__info-text">
+                    На поездах и автобусах<br />
+                    по самым красивым<br />
+                    местам Европы
+                  </p>
+                </li>
+                <li class="banner__info-item">
+                  <p class="banner__info-title">8 городов</p>
+                  <p class="banner__info-text">
+                    Лондон, Париж, Милан, <br />
+                    Венеция, Вена, Берлин,<br />
+                    Прага и Амстердам
+                  </p>
+                </li>
+                <li class="banner__info-item">
+                  <p class="banner__info-title">70 000 рублей</p>
+                  <p class="banner__info-text">
+                    В цену включены трансферы,<br />
+                    размещение в гостиницах<br />
+                    и виза
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner__comment comment">
+            <div class="comment__photo-block">
+              <img
+                class="comment__photo"
+                src="local/templates/site/img/reviews/reviews-photo-1.jpg"
+                alt="Михаил Друтман"
+                title="Михаил Друтман"
+                width="72"
+                height="72"
+              />
+              <span class="comment__triangle"></span>
+            </div>
+            <p class="comment__name">Михаил Друтман</p>
+            <p class="comment__about">об этом туре</p>
+            <div class="comment__block">
+              <span class="comment__quote comment__quote--left">
+                <svg width="39" height="29">
+                  <use
+                    xlink:href="local/templates/site/img/sprite.svg#quote-first"
+                  />
+                </svg>
+              </span>
+              <span class="comment__quote comment__quote--right">
+                <svg width="39" height="29">
+                  <use
+                    xlink:href="local/templates/site/img/sprite.svg#quote-second"
+                  />
+                </svg>
+              </span>
+              <p class="comment__text">
+                Для российских путешественников компания организует туры в 77
+                стран мира любой категории сложности, от стандартных групповых
+                туров до индивидуальных VIP-программ. Спектр предлагаемых
+                маршрутов огромен: это отдых на известных курортах
+                Средиземноморья, в экзотических странах и на островах,
+                горнолыжных курортах, круизы по морю и железной дороге,
+                классическая Европа, сафари в Африке, лечение и оздоровление в
+                SPA-центрах, парки развлечений, свадебные туры и многое другое.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- data-zoom = маштабирование карты
+            data-offset-x = должно быть число (можно дробь через ".") - это отступ от крайней точки справа и центра 
+            data-cord = кординаты места - строка через запятую 
+            data-tour - последовательная нумерация туров
+
+            по умолчанию: 
+            data-zoom = 6;
+            data-offset-x = 3;
+        -->
+      <section class="tour" data-zoom="6" data-offset-x="3">
+        <div
+          id="mapTour"
+          class="tour__map"
+          style="background-image: url(local/templates/site/img/maps.jpg)"
+        ></div>
+        <div class="tour__block">
+          <div class="tour__city" data-tour="1" data-cord="51.5074,-0.1277">
+            <div class="tour__image-block tour__image-block__first">
+              <img
+                src="local/templates/site/img/tour/tour-london.jpg"
+                alt=""
+                class="tour__image"
+              />
+            </div>
+            <div class="tour__title-block">
+              <span class="tour__number-city"></span>
+              <h2 class="tour__title">Лондон</h2>
+              <p class="tour__sub-title">
+                Столица Англии и Соединенного Королевства
+              </p>
+            </div>
+            <div class="tour__info-block tour__info-block__next">
+              <div class="tour__tabs">
+                <ul class="tour__tabs-list">
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link active" data-tabs="1">
+                      Маршрут
+                    </button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link" data-tabs="2">Отели</button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link" data-tabs="3">
+                      Фотоотчёт
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tour__info-wrapper">
+                <div class="tour__info tour-route" data-block="1">
+                  <ul class="tour-route__list">
+                    <li class="tour-route__item tour-route__item__line">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">16:30 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Встречаемся в аэропорту Хитроу, отмечаемся,
+                          справляемся. Ждать всех будем до 17:00 по местному
+                          времени.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item tour-route__item__line">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">17:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Отправляемся в отель. Оставляем в номерах всё тяжёлое.
+                          С собой обязательно берём наличные небольшой суммой,
+                          т.к. может пригодиться в местах, где не принимают
+                          карты.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item tour-route__item__line">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">19:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Посетим
+                          <a href="" target="_blank"
+                            >Вестминстерское аббатство</a
+                          >. Эта церковь является местом коронации британских
+                          монархов.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item tour-route__item__line">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">21:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Сходим на
+                          <a href="" target="_blank"
+                            >колесо обозрения «Лондонский глаз»</a
+                          >, с которого открывается панорамный вид не только на
+                          южный берег, но и на весь город.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item tour-route__item__line">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">09:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          В Лондоне находится
+                          <a href="" target="_blank"
+                            >национальная Британская библиотека</a
+                          >. В библиотеке в общей сложности 170 миллионов единиц
+                          хранения. Посмотрим интересные экземпляры.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">12:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Обратно собираемся в аэропорту Хитроу и отправляемся в
+                          Париж!
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-hotel" data-block="2">
+                  <p class="tour-hotel__info">
+                    Отели, в которых мы остановимся в Париже. Проживание входит
+                    в стоимость тура. Вы можете ознакомиться с их особенностями.
+                  </p>
+                  <ul class="tour-hotel__list">
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-1.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Scribe-Paris by Sofitel de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          В нескольких шагах от Opera Garnier, в самом сердце
+                          Парижа, рядом с роскошными бутиками Place Vendome,
+                          находится отель Scribe, следующий традиции
+                          изысканности, элегантности и шика Второй империи и
+                          великой эры Jockey-Club.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-2.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Royal Monceau Mandarin de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          Отель входит в цепочку Special Honeymoon Hotels.
+                          Расположенный в историческом центре Парижа, отель
+                          Royal Monceau впервые открыл свои двери в 1928 году. С
+                          тех пор в этих стенах успело побывать немало
+                          знаменитостей. В разные времена гостями Royal Monceau
+                          стали сэр Уинстон Черчилль, генерал Эйзенхауэр, Роберт
+                          де Ниро, Шарь Азнавур, Мадонна и Майкл Джексон.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-gallery " data-block="3">
+                  <p class="tour-gallery__text">
+                    Фотографии с прошедших туров по Европе.
+                  </p>
+                  <div class="tour-gallery__block">
+                    <ul class="tour-gallery__list">
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 6"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 7"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 8"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 9"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 10"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 11"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 12"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 13"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 14"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 15"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span
+                            class="tour-gallery__zoom tour-gallery__zoom--const"
+                          >
+                            <span class="tour-gallery__zoom-counter">+5</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="visually-hidden">
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 5"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 4"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 3"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 2"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 1"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tour__city" data-tour="2" data-cord="48.8567, 2.3516">
+            <div class="tour__image-block">
+              <img
+                src="local/templates/site/img/tour/parish.jpg"
+                alt=""
+                class="tour__image"
+              />
+            </div>
+            <div class="tour__title-block">
+              <span class="tour__number-city"></span>
+              <h2 class="tour__title">Париж</h2>
+              <p class="tour__sub-title">
+                Столица Франции. Один из главных европейских городов и мировой
+                центр культуры, искусства, моды и гастрономии
+              </p>
+            </div>
+            <div class="tour__info-block tour__info-block__next">
+              <div class="tour__tabs">
+                <ul class="tour__tabs-list">
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link " data-tabs="1">
+                      Маршрут
+                    </button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link active" data-tabs="2">
+                      Отели
+                    </button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link" data-tabs="3">
+                      Фотоотчёт
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tour__info-wrapper">
+                <div class="tour__info tour-route" data-block="1">
+                  <ul class="tour-route__list">
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">16:30 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Встречаемся в аэропорту Хитроу, отмечаемся,
+                          справляемся. Ждать всех будем до 17:00 по местному
+                          времени.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">17:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Отправляемся в отель. Оставляем в номерах всё тяжёлое.
+                          С собой обязательно берём наличные небольшой суммой,
+                          т.к. может пригодиться в местах, где не принимают
+                          карты.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">19:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Посетим
+                          <a href="" target="_blank"
+                            >Вестминстерское аббатство</a
+                          >. Эта церковь является местом коронации британских
+                          монархов.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">21:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Сходим на
+                          <a href="" target="_blank"
+                            >колесо обозрения «Лондонский глаз»</a
+                          >, с которого открывается панорамный вид не только на
+                          южный берег, но и на весь город.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">09:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          В Лондоне находится
+                          <a href="" target="_blank"
+                            >национальная Британская библиотека</a
+                          >. В библиотеке в общей сложности 170 миллионов единиц
+                          хранения. Посмотрим интересные экземпляры.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">12:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Обратно собираемся в аэропорту Хитроу и отправляемся в
+                          Париж!
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-hotel" data-block="2">
+                  <p class="tour-hotel__info">
+                    Отели, в которых мы остановимся в Париже. Проживание входит
+                    в стоимость тура. Вы можете ознакомиться с их особенностями.
+                  </p>
+                  <ul class="tour-hotel__list">
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-1.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Scribe-Paris by Sofitel de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          В нескольких шагах от Opera Garnier, в самом сердце
+                          Парижа, рядом с роскошными бутиками Place Vendome,
+                          находится отель Scribe, следующий традиции
+                          изысканности, элегантности и шика Второй империи и
+                          великой эры Jockey-Club.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-2.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Royal Monceau Mandarin de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          Отель входит в цепочку Special Honeymoon Hotels.
+                          Расположенный в историческом центре Парижа, отель
+                          Royal Monceau впервые открыл свои двери в 1928 году. С
+                          тех пор в этих стенах успело побывать немало
+                          знаменитостей. В разные времена гостями Royal Monceau
+                          стали сэр Уинстон Черчилль, генерал Эйзенхауэр, Роберт
+                          де Ниро, Шарь Азнавур, Мадонна и Майкл Джексон.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-gallery " data-block="3">
+                  <p class="tour-gallery__text">
+                    Фотографии с прошедших туров по Европе.
+                  </p>
+                  <div class="tour-gallery__block">
+                    <ul class="tour-gallery__list">
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 26"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 7"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 8"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 9"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 10"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 11"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 12"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 13"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 14"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 15"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span
+                            class="tour-gallery__zoom tour-gallery__zoom--const"
+                          >
+                            <span class="tour-gallery__zoom-counter">+5</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="visually-hidden">
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 5"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 4"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 3"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 2"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 1"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tour__city" data-tour="3" data-cord="45.4694, 9.1806">
+            <div class="tour__image-block">
+              <img
+                src="local/templates/site/img/tour/milan.jpg"
+                class="tour__image"
+                alt="Крупный город на севере Италии"
+                title="Милан"
+                width="670"
+                height="408"
+              />
+            </div>
+            <div class="tour__title-block">
+              <span class="tour__number-city"></span>
+              <h2 class="tour__title">Милан</h2>
+              <p class="tour__sub-title">
+                Крупный город на севере Италии, расположенный в Ломбардии.
+                Мировая столица дизайна и моды.
+              </p>
+            </div>
+            <div class="tour__info-block tour__info-block__next">
+              <div class="tour__tabs">
+                <ul class="tour__tabs-list">
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link " data-tabs="1">
+                      Маршрут
+                    </button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link" data-tabs="2">Отели</button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link active" data-tabs="3">
+                      Фотоотчёт
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tour__info-wrapper">
+                <div class="tour__info tour-route" data-block="1">
+                  <ul class="tour-route__list">
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">16:30 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Встречаемся в аэропорту Хитроу, отмечаемся,
+                          справляемся. Ждать всех будем до 17:00 по местному
+                          времени.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">17:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Отправляемся в отель. Оставляем в номерах всё тяжёлое.
+                          С собой обязательно берём наличные небольшой суммой,
+                          т.к. может пригодиться в местах, где не принимают
+                          карты.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">19:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Посетим
+                          <a href="" target="_blank"
+                            >Вестминстерское аббатство</a
+                          >. Эта церковь является местом коронации британских
+                          монархов.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">21:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Сходим на
+                          <a href="" target="_blank"
+                            >колесо обозрения «Лондонский глаз»</a
+                          >, с которого открывается панорамный вид не только на
+                          южный берег, но и на весь город.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">09:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          В Лондоне находится
+                          <a href="" target="_blank"
+                            >национальная Британская библиотека</a
+                          >. В библиотеке в общей сложности 170 миллионов единиц
+                          хранения. Посмотрим интересные экземпляры.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">12:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Обратно собираемся в аэропорту Хитроу и отправляемся в
+                          Париж!
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-hotel" data-block="2">
+                  <p class="tour-hotel__info">
+                    Отели, в которых мы остановимся в Париже. Проживание входит
+                    в стоимость тура. Вы можете ознакомиться с их особенностями.
+                  </p>
+                  <ul class="tour-hotel__list">
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-1.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Scribe-Paris by Sofitel de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          В нескольких шагах от Opera Garnier, в самом сердце
+                          Парижа, рядом с роскошными бутиками Place Vendome,
+                          находится отель Scribe, следующий традиции
+                          изысканности, элегантности и шика Второй империи и
+                          великой эры Jockey-Club.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-2.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Royal Monceau Mandarin de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          Отель входит в цепочку Special Honeymoon Hotels.
+                          Расположенный в историческом центре Парижа, отель
+                          Royal Monceau впервые открыл свои двери в 1928 году. С
+                          тех пор в этих стенах успело побывать немало
+                          знаменитостей. В разные времена гостями Royal Monceau
+                          стали сэр Уинстон Черчилль, генерал Эйзенхауэр, Роберт
+                          де Ниро, Шарь Азнавур, Мадонна и Майкл Джексон.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-gallery " data-block="3">
+                  <p class="tour-gallery__text">
+                    Фотографии с прошедших туров по Европе.
+                  </p>
+                  <div class="tour-gallery__block">
+                    <ul class="tour-gallery__list">
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 36"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 7"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 8"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 9"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 10"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 11"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 12"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 13"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 14"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 15"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span
+                            class="tour-gallery__zoom tour-gallery__zoom--const"
+                          >
+                            <span class="tour-gallery__zoom-counter">+5</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="visually-hidden">
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 5"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 4"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 3"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 2"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 1"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tour__city" data-tour="4" data-cord="45.4694, 12.1806">
+            <div class="tour__image-block">
+              <img
+                src="local/templates/site/img/tour/milan.jpg"
+                class="tour__image"
+                alt="Крупный город на севере Италии"
+                title="Милан"
+                width="670"
+                height="408"
+              />
+            </div>
+            <div class="tour__title-block">
+              <span class="tour__number-city"></span>
+              <h2 class="tour__title">Милан</h2>
+              <p class="tour__sub-title">
+                Крупный город на севере Италии, расположенный в Ломбардии.
+                Мировая столица дизайна и моды.
+              </p>
+            </div>
+            <div class="tour__info-block tour__info-block__last">
+              <div class="tour__tabs">
+                <ul class="tour__tabs-list">
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link " data-tabs="1">
+                      Маршрут
+                    </button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link" data-tabs="2">Отели</button>
+                  </li>
+                  <li class="tour__tabs-item">
+                    <button class="tour__tabs-link active" data-tabs="3">
+                      Фотоотчёт
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tour__info-wrapper">
+                <div class="tour__info tour-route" data-block="1">
+                  <ul class="tour-route__list">
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">16:30 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Встречаемся в аэропорту Хитроу, отмечаемся,
+                          справляемся. Ждать всех будем до 17:00 по местному
+                          времени.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">17:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Отправляемся в отель. Оставляем в номерах всё тяжёлое.
+                          С собой обязательно берём наличные небольшой суммой,
+                          т.к. может пригодиться в местах, где не принимают
+                          карты.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">19:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Посетим
+                          <a href="" target="_blank"
+                            >Вестминстерское аббатство</a
+                          >. Эта церковь является местом коронации британских
+                          монархов.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">20 февраля</p>
+                        <p class="tour-route__time">21:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Сходим на
+                          <a href="" target="_blank"
+                            >колесо обозрения «Лондонский глаз»</a
+                          >, с которого открывается панорамный вид не только на
+                          южный берег, но и на весь город.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">09:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          В Лондоне находится
+                          <a href="" target="_blank"
+                            >национальная Британская библиотека</a
+                          >. В библиотеке в общей сложности 170 миллионов единиц
+                          хранения. Посмотрим интересные экземпляры.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="tour-route__item">
+                      <div class="tour-route__date-time">
+                        <p class="tour-route__date">21 февраля</p>
+                        <p class="tour-route__time">12:00 (GMT+1)</p>
+                      </div>
+                      <span class="tour-route__pin">
+                        <svg
+                          class="tour-route__pin-svg tour-route__pin-svg--first"
+                          width="9"
+                          height="15"
+                        >
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin-first"
+                          />
+                        </svg>
+                        <svg class="tour-route__pin-svg" width="9" height="9">
+                          <use
+                            xlink:href="local/templates/site/img/sprite.svg#route-pin"
+                          />
+                        </svg>
+                        <svg
+                          class="tour-route__line"
+                          width="2"
+                          height="52"
+                          viewBox="0 0 2 52"
+                        >
+                          <line x1="0" y1="0" x2="2" y2="1000" />
+                        </svg>
+                      </span>
+                      <div class="tour-route__description">
+                        <p class="tour-route__description-text">
+                          Обратно собираемся в аэропорту Хитроу и отправляемся в
+                          Париж!
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-hotel" data-block="2">
+                  <p class="tour-hotel__info">
+                    Отели, в которых мы остановимся в Париже. Проживание входит
+                    в стоимость тура. Вы можете ознакомиться с их особенностями.
+                  </p>
+                  <ul class="tour-hotel__list">
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-1.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Scribe-Paris by Sofitel de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          В нескольких шагах от Opera Garnier, в самом сердце
+                          Парижа, рядом с роскошными бутиками Place Vendome,
+                          находится отель Scribe, следующий традиции
+                          изысканности, элегантности и шика Второй империи и
+                          великой эры Jockey-Club.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                    <li class="tour-hotel__item">
+                      <div class="tour-hotel__img-block">
+                        <img
+                          src="local/templates/site/img/hotel/hotel-2.jpg"
+                          class="tour-hotel__img"
+                          alt="Scribe-Paris by Sofitel de luxe"
+                          title="Scribe-Paris by sofitel"
+                          width="265"
+                          height="157"
+                        />
+                      </div>
+                      <div class="tour-hotel__description">
+                        <h3 class="tour-hotel__title">
+                          <a class="tour-hotel__title-link" href=""
+                            >Royal Monceau Mandarin de luxe</a
+                          >
+                        </h3>
+                        <div class="tour-hotel__star">
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                          <svg class="star" width="13" height="12">
+                            <use
+                              xlink:href="local/templates/site/img/sprite.svg#star"
+                            />
+                          </svg>
+                        </div>
+                        <p class="tour-hotel__text">
+                          Отель входит в цепочку Special Honeymoon Hotels.
+                          Расположенный в историческом центре Парижа, отель
+                          Royal Monceau впервые открыл свои двери в 1928 году. С
+                          тех пор в этих стенах успело побывать немало
+                          знаменитостей. В разные времена гостями Royal Monceau
+                          стали сэр Уинстон Черчилль, генерал Эйзенхауэр, Роберт
+                          де Ниро, Шарь Азнавур, Мадонна и Майкл Джексон.
+                        </p>
+                        <a href="" class="tour-hotel__link">Подробнее</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tour__info tour-gallery " data-block="3">
+                  <p class="tour-gallery__text">
+                    Фотографии с прошедших туров по Европе.
+                  </p>
+                  <div class="tour-gallery__block">
+                    <ul class="tour-gallery__list">
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 36"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 7"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 8"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 9"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 10"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 11"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 12"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-3.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 13"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-4.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 14"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-1.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span class="tour-gallery__zoom">
+                            <svg
+                              class="tour-gallery__zoom-svg"
+                              width="21"
+                              height="21"
+                            >
+                              <use
+                                xlink:href="local/templates/site/img/sprite.svg#loup-zoom"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="tour-gallery__item">
+                        <a
+                          href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                          class="tour-gallery__link"
+                          data-fancybox="gallery"
+                          data-caption="My caption 15"
+                          data-width="1400"
+                          data-height="1400"
+                        >
+                          <img
+                            src="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                            class="tour-gallery__image"
+                            alt=""
+                            title=""
+                            width=""
+                            height=""
+                          />
+                          <span
+                            class="tour-gallery__zoom tour-gallery__zoom--const"
+                          >
+                            <span class="tour-gallery__zoom-counter">+5</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="visually-hidden">
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 5"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 4"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 3"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 2"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                      <a
+                        href="local/templates/site/img/gallery/tour-gallery-2.jpg"
+                        data-fancybox="gallery"
+                        data-caption="My caption 1"
+                        data-width="1400"
+                        data-height="1400"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="check-list"
+        style="background-image: url('local/templates/site/img/check-list-bg.jpg');"
+      >
+        <span class="triangle">
+          <span class="triangle__left"></span>
+          <span class="triangle__right"></span>
+        </span>
+        <div class="container">
+          <h2 class="check-list__title">Чек-лист тура</h2>
+          <div class="check-list__block">
+            <ul class="check-list__list">
+              <li class="check-list__item">
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-calendar.svg"  class="check-list__icon">
+                </div>
+                <p class="check-list__item-title">18 дней</p>
+                <p class="check-list__description">
+                  2-20 мая 2019. На поездах и автобусах по самым красивым местам
+                  Европы.
+                </p>
+              </li>
+              <li class="check-list__item">
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-pin.svg"  class="check-list__icon">
+                </div>
+                <p class="check-list__item-title">8 городов</p>
+                <p class="check-list__description">
+                  Лондон, Париж, Милан, Венеция, Вена, Берлин, Прага и
+                  Амстердам.
+                </p>
+              </li>
+              <li class="check-list__item check-list__item--cash">
+                <svg class="check-list__border" width="100" height="50">
+                  <use
+                    xlink:href="local/templates/site/img/sprite.svg#border-cash"
+                  />
+                </svg>
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-cash.svg"  class="check-list__icon">
+                </div>
+
+                <p class="check-list__item-title">
+                  <span class="check-list__item-title--small"
+                    >Стоимость тура</span
+                  >
+                  <span class="check-list__item-title--value">70&nbsp;000</span>
+                  <span class="check-list__item-title--rubles">рублей</span>
+                </p>
+                <p class="check-list__description">
+                  В цену включены трансферы, размещение в гостиницах и виза.
+                </p>
+              </li>
+              <li class="check-list__item">
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-star.svg"  class="check-list__icon">
+                </div>
+                <p class="check-list__item-title">Отели</p>
+                <p class="check-list__description">
+                  Мы останавливаемся в отелях с 3 и 4 звездами.<br />
+                  Завтрак включен.
+                </p>
+              </li>
+              <li class="check-list__item">
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-people.svg"  class="check-list__icon">
+                </div>
+                <p class="check-list__item-title">Возраст: 16-45</p>
+                <p class="check-list__description">
+                  Наш тур подходит любому возрасту: и юным, и опытным
+                  путешественникам.
+                </p>
+              </li>
+              <li class="check-list__item">
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-stop.svg"  class="check-list__icon">
+                </div>
+                <p class="check-list__item-title">Бесплатная отмена</p>
+                <p class="check-list__description">
+                  Забронируйте тур и отмените бесплатно. Бронь будет нельзя
+                  отменить начиная с двух недель до поездки.
+                </p>
+              </li>
+              <li class="check-list__item">
+                <div class="check-list__icon-block">
+                  <img src="local/templates/site/img/svg-sprite/tour/tour-map.svg"  class="check-list__icon">
+                </div>
+                <p class="check-list__item-title">Карта тура</p>
+                <p class="check-list__description">
+                  Посмотреть на ЯндексКартах схему маршрута, по которому
+                  проходит тур.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="check-list__item--cash__container">
+            <svg class="check-list__border" width="100" height="50">
+              <use
+                xlink:href="local/templates/site/img/sprite.svg#dash_border_mb"
+              />
+            </svg>
+            <div class="check-list__icon-block">
+              <img src="local/templates/site/img/svg-sprite/tour/tour-cash.svg"  class="check-list__icon">
+            </div>
+
+            <p class="check-list__item-title">
+              <span class="check-list__item-title--small"
+                >Стоимость тура</span
+              >
+              <span class="check-list__item-title--value">70&nbsp;000</span>
+              <span class="check-list__item-title--rubles">рублей</span>
+            </p>
+            <p class="check-list__description">
+              В цену включены трансферы, размещение в гостиницах и виза.
+            </p>
+        </div>
+          <div class="check-list__information">
+            <p class="check-list__information-title">
+              Дополнительная информация
+            </p>
+            <div class="check-list__information-block">
+              <p class="check-list__information-text">
+                Расходы могут быть связаны с посещением музеев, кафе и
+                магазинов. В некоторых отелях могут быть платные услуги
+                прачечной и другие. Туры на речных трамваях и сегвеях включены в
+                стоимость в 5 городах из 8.
+              </p>
+              <p class="check-list__information-text">
+                Мы рекомендуем взять с собой дополнительную сумму наличных на
+                карманные расходы, например, на снеки или магазины. В Европе
+                принято оставлять чаевые в кафе – до 10%.
+              </p>
+            </div>
+          </div>
+        </div>
+        <section class="reviews reviews--without-bg">
+          <div class="reviews__block-title">
+            <div class="container">
+              <h2 class="main-title reviews__title">Отзывы</h2>
+            </div>
+          </div>
+          <div class="reviews__slider">
+            <div class="reviews__item">
+              <div class="container">
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__photo-block">
+                    <img
+                      class="reviews__photo"
+                      src="local/templates/site/img/reviews/Mariam.jpg"
+                      alt="Мариам"
+                      title="Мариам"
+                      width="72"
+                      height="72"
+                    />
+                    <span class="reviews__triangle"></span>
+                  </div>
+                  <p class="reviews__item-name">Мариам</p>
+                  <p class="reviews__item-about">Про Аланию</p>
+                  <div class="reviews__item-block">
+                    <p class="reviews__item-text">
+                      В Алании есть всё для прекрасного отдыха н море: теплый
+                      климат, целебный воздух, замечательные песчаные
+                      пляжи,чистое море, а также живописная историческая часть.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="container">
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__photo-block">
+                    <img
+                      class="reviews__photo"
+                      src="local/templates/site/img/reviews/Konstantin.jpg"
+                      alt="Мариам"
+                      title="Мариам"
+                      width="72"
+                      height="72"
+                    />
+                    <span class="reviews__triangle"></span>
+                  </div>
+                  <p class="reviews__item-name">Константин</p>
+                  <p class="reviews__item-about">Про Дубай</p>
+                  <div class="reviews__item-block">
+                    <p class="reviews__item-text">
+                      Дубай – город-сказка, город-мечта. Когда попадаешь в его
+                      сети, действительно о многом забываешь. Город технологий,
+                      небоскребов и всего самого-самого: большого, высокого,
+                      стильного
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="container">
+                <div class="reviews__item-wrapper">
+                  <div class="reviews__photo-block">
+                    <img
+                      class="reviews__photo"
+                      src="local/templates/site/img/reviews/reviews-photo-1.jpg"
+                      alt="Мариам"
+                      title="Мариам"
+                      width="72"
+                      height="72"
+                    />
+                    <span class="reviews__triangle"></span>
+                  </div>
+                  <p class="reviews__item-name">Лидия</p>
+                  <p class="reviews__item-about">Про Милан</p>
+                  <div class="reviews__item-block">
+                    <p class="reviews__item-text">
+                      Отличное место, если хочется тишины. А людный центр в
+                      шаговой доступности. Первый этаж весь общий, на втором
+                      этаже спальни. Вся мебель новая и чистая, а комнаты
+                      светлые. В большую комнату даже поместилась наша компания
+                      из 5 человек.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="booking-tour">
+        <span class="triangle">
+          <span class="triangle__left"></span>
+          <span class="triangle__right"></span>
+        </span>
+        <div class="container">
+          <h2 class="main-title booking-tour__title">
+            Забронируйте тур сейчас
+          </h2>
+          <p class="main-title__sub-title booking-tour__sub-title">
+            Комиссия за тур составит 100 рублей.<br />
+            Тур можно забронировать на гибкие даты<br />
+            и с бесплатной отменой.
+          </p>
+          <div class="booking-tour__wrapper">
+            <form class="booking-tour__form form">
+              <div class="form__fieldset">
+                <div class="form__wrapper">
+                  <label class="form__label-input">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="Name"
+                      required
+                      data-valid="name"
+                      placeholder="Ваше имя"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="form__fieldset">
+                <div class="form__wrapper">
+                  <label class="form__label-input">
+                    <input
+                      class="form__input"
+                      type="email"
+                      name="email"
+                      required
+                      data-valid="email"
+                      placeholder="Ваш E-mail"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="form__fieldset">
+                <div class="form__wrapper">
+                  <label class="form__label-input">
+                    <input
+                      class="form__input"
+                      type="tel"
+                      name="phone"
+                      required
+                      data-valid="phone"
+                      placeholder="Ваш номер телефона"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="form__fieldset">
+                <div class="form__wrapper">
+                  <label class="form__label-input">
+                    <textarea
+                      class="form__textarea textarea-auto-height"
+                      name="comment"
+                      required
+                      data-valid="text"
+                      placeholder="Комментарий"
+                      rows="1"
+                    ></textarea>
+                    <div class="form__textarea-div"></div>
+                  </label>
+                </div>
+              </div>
+              <div class="form__fieldset">
+                <div class="form__checkbox-wrapper">
+                  <label class="form__checkbox-label">
+                    <input
+                      type="radio"
+                      class="visually-hidden"
+                      hidden
+                      required
+                      data-valid="checkbox"
+                      checked
+                    />
+                    <span class="form__checkbox">
+                      <svg
+                        class="form__checkbox-check"
+                        width="11px"
+                        height="8px"
+                      >
+                        <use
+                          xlink:href="local/templates/site/img/sprite.svg#check"
+                        />
+                      </svg>
+                    </span>
+                    <span class="form__checkbox-title"
+                      >Согласен с
+                      <a href="#" target="_blank"
+                        >Политикой обработки персональных данных</a
+                      >
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__fieldset form__fieldset--button">
+                <div class="form__wrapper">
+                  <button
+                    class="form__button button button--gold"
+                    type="submit"
+                  >
+                    Свяжитесь со мной
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="tours-slider">
+        <div class="container">
+          <h2 class="tours-slider__title main-title">другие туры по европе</h2>
+          <div class="tours-slider__list">
+            <article class="tours-slider__item tour-cart">
+              <a href="#" class="tour-cart__link">
+                <div class="tour-cart__image-block">
+                  <img
+                    class="tour-cart__image"
+                    src="local/templates/site/img/tour-cart/tour-cart-1.jpg"
+                    alt="Самые красивые города Европы"
+                    title="города Европы"
+                    width="370"
+                    height="205"
+                  />
+                </div>
+                <div class="tour-cart__block">
+                  <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                  <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                  <div class="tour-cart__time-city">
+                    <p class="tour-cart__time">5 дней</p>
+                    <p class="tour-cart__city">3 города</p>
+                  </div>
+                  <p class="tour-cart__cost">
+                    <span class="tour-cart__value">34 000</span>
+                    <span class="tour-cart__currency">₽</span>
+                  </p>
+                  <span class="tour-cart__button button">Подробнее</span>
+                </div>
+              </a>
+            </article>
+            <article class="tours-slider__item tour-cart">
+              <a href="#" class="tour-cart__link">
+                <div class="tour-cart__image-block">
+                  <img
+                    class="tour-cart__image"
+                    src="local/templates/site/img/tour-cart/tour-cart-2.jpg"
+                    alt="Самые красивые города Европы"
+                    title="города Европы"
+                    width="370"
+                    height="205"
+                  />
+                </div>
+                <div class="tour-cart__block">
+                  <h3 class="tour-cart__title">В самом сердце Европы</h3>
+                  <p class="tour-cart__date">2–20 Мая, 2019</p>
+                  <div class="tour-cart__time-city">
+                    <p class="tour-cart__time">18 дней</p>
+                    <p class="tour-cart__city">8 городов</p>
+                  </div>
+                  <p class="tour-cart__cost">
+                    <span class="tour-cart__value">70 000</span>
+                    <span class="tour-cart__currency">₽</span>
+                  </p>
+                  <span class="tour-cart__button button">Подробнее</span>
+                </div>
+              </a>
+            </article>
+            <article class="tours-slider__item tour-cart">
+              <a href="#" class="tour-cart__link">
+                <div class="tour-cart__image-block">
+                  <img
+                    class="tour-cart__image"
+                    src="local/templates/site/img/tour-cart/tour-cart-3.jpg"
+                    alt="Самые красивые города Европы"
+                    title="города Европы"
+                    width="370"
+                    height="205"
+                  />
+                </div>
+                <div class="tour-cart__block">
+                  <h3 class="tour-cart__title">Прогулки на свежем воздухе</h3>
+                  <p class="tour-cart__date">5–12 Июня, 2019</p>
+                  <div class="tour-cart__time-city">
+                    <p class="tour-cart__time">4 дней</p>
+                    <p class="tour-cart__city">3 города</p>
+                  </div>
+                  <p class="tour-cart__cost">
+                    <span class="tour-cart__value">48 000</span>
+                    <span class="tour-cart__currency">₽</span>
+                  </p>
+                  <span class="tour-cart__button button">Подробнее</span>
+                </div>
+              </a>
+            </article>
+            <article class="tours-slider__item tour-cart">
+              <a href="#" class="tour-cart__link">
+                <div class="tour-cart__image-block">
+                  <img
+                    class="tour-cart__image"
+                    src="local/templates/site/img/tour-cart/tour-cart-1.jpg"
+                    alt="Самые красивые города Европы"
+                    title="города Европы"
+                    width="370"
+                    height="205"
+                  />
+                </div>
+                <div class="tour-cart__block">
+                  <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                  <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                  <div class="tour-cart__time-city">
+                    <p class="tour-cart__time">5 дней</p>
+                    <p class="tour-cart__city">3 города</p>
+                  </div>
+                  <p class="tour-cart__cost">
+                    <span class="tour-cart__value">34 000</span>
+                    <span class="tour-cart__currency">₽</span>
+                  </p>
+                  <span class="tour-cart__button button">Подробнее</span>
+                </div>
+              </a>
+            </article>
+            <article class="tours-slider__item tour-cart tour-cart--empty">
+              <a href="#" class="tour-cart__link">
+                <div class="tour-cart__logo-block">
+                  <svg class="tour-cart__logo" width="268" height="155">
+                    <use
+                      xlink:href="local/templates/site/img/sprite.svg#logo"
+                    />
+                  </svg>
+                </div>
+                <p class="tour-cart__show-more">
+                  <span class="tour-cart__value">Посмотреть все туры</span>
+                  <svg class="tour-cart__arrow-text" width="20" height="15">
+                    <use
+                      xlink:href="local/templates/site/img/sprite.svg#right-arrow"
+                    />
+                  </svg>
+                </p>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <style></style>
+
+    <include src="src/html-const/footer.html"></include>
+
+    <include src="src/html-const/scripts.html"></include>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=f7965e50-a22a-440f-b07f-fb24aa620355&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="local/templates/site/js/map.min.js"></script>
+  </body>
+</html>

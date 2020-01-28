@@ -1,0 +1,234 @@
+.pick-tours {
+  width: 100%;
+  padding-bottom: 70px;
+  padding-top: 24px;
+  position: relative;
+  z-index: 5;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  transition: background-image 0.3s linear;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    // filter: blur(5px);
+    filter: url(#blur);
+
+    z-index: -2;
+    @include media-small-tablet-max() {
+      background-position: center;
+    }
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  //@include large-mobile {
+  //  padding-bottom: 28px;
+  //}
+
+  @include media-small-tablet-max() {
+    background-attachment: unset;
+  }
+}
+
+.pick-tours__form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pick-tours__title {
+  @include mp-reset();
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: $text-color-2;
+  text-transform: uppercase;
+  @include mobile-width-only {
+    padding: 0 5px;
+  }
+}
+
+.pick-tours__form {
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+  margin-top: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pick-tours__fieldset {
+  width: 25%;
+  padding: 0 15px;
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.pick-tours__select {
+  width: 100%;
+  display: flex;
+}
+
+.pick-tours__label {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pick-tours__date {
+  @include mp-reset();
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: rgba(255,255,255,0.8);
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline-color: transparent;
+
+    background-color: $bg-color-1;
+    border: 1px solid $bg-color-1;
+    color: $text-color-3;
+  }
+
+  &.active {
+    color: #fff;
+    &:hover,
+    &:focus {
+      outline-color: transparent;
+
+      background-color: $bg-color-1;
+      border: 1px solid $bg-color-1;
+      color: $text-color-3;
+    }
+  }
+}
+
+.pick-tours__date::-moz-placeholder {
+  color: inherit; /* Цвет подсказывающего текста */
+}
+
+.pick-tours__date::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.pick-tours__date:-ms-input-placeholder {
+  color: inherit;
+}
+
+.pick-tours__date::-ms-input-placeholder {
+  color: inherit;
+}
+
+.pick-tours__date::placeholder {
+  color: inherit;
+}
+
+.pick-tours__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-tours__svg {
+  fill: $bg-color-2;
+}
+
+.pick-tours__button {
+  width: 100%;
+  @include large-mobile {
+    margin-bottom: 0px;
+  }
+}
+//
+//.pick-tours__form {
+//  @include large-tablet-width {
+//    padding: 0 20px;
+//    margin: 0;
+//    width: 100%;
+//  }
+//  @include mobile-width-only {
+//    flex-direction: column;
+//    width: 100%;
+//    margin: 0;
+//  }
+//  .pick-tours__fieldset {
+//    @include desktop-width {
+//      width: 50%;
+//      padding: 0 20px;
+//    }
+//    @include large-tablet-width {
+//      width: 50%;
+//      padding: 0 20px;
+//    }
+//    @include mobile-width-only {
+//      width: 100%;
+//      padding: 0;
+//    }
+//  }
+//}
+
+@media all and (max-width: $tablet-max-width) {
+  .pick-tours {
+    padding-bottom: 28px;
+  }
+  .pick-tours__fieldset {
+    width: 50%;
+  }
+}
+
+
+@media all and (max-width: $phone-max-width) {
+  .pick-tours__fieldset {
+    width: 100%;
+  }
+}

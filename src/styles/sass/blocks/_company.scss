@@ -1,0 +1,310 @@
+.main-company {
+  .container {
+    padding: 0; // нужно убрать
+  }
+
+  //.booking-tour {
+  //  padding: 35px 0;
+  //  background: #ffffff;
+  //}
+  //.triangle__left {
+  //  background: #ffffff;
+  //}
+  //.triangle__right {
+  //  background: #ffffff;
+  //}
+
+
+  .company-supervisor {
+    padding: 62px 0 70px;
+
+    background: $bg-color-7;
+    border-bottom: solid 2px #ffffff;
+    @include mobile-width-only {
+      padding: 30px 20px;
+    }
+  }
+  .company-supervisor__card__wrap {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 700px;
+    @include media-mobile-max {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .company-supervisor__card {
+    margin-right: 30px;
+    @include media-tablet-max {
+      // margin-bottom: 30px;
+    }
+    @include media-mobile-max {
+      width: 260px;
+      // height: 260px;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+  .company-supervisor__card__img {
+    margin-bottom: 20px;
+  }
+  .supervisor__last {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .company-department__title {
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .department-section {
+    padding: 64px 0 0px;
+
+    width: 100%;
+
+    background: $bg-color-7;
+    @include mobile-width-only {
+      padding: 30px 0;
+    }
+  }
+  .departmnet-section__container {
+    padding-bottom: 70px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1000px;
+    @include media-desktop-max {
+      padding-bottom: 40px;
+    }
+    @include mobile-width-only {
+      padding: 0 7px;
+    }
+  }
+  .mice-department {
+    margin-bottom: 34px;
+    @include media-desktop-max {
+      margin-bottom: 30px;
+    }
+    @include mobile-width-only {
+      margin-bottom: 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .department__list {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    width: auto;
+  }
+  .city-photo__list__wrap {
+    background: #ffffff;
+    @include mobile-width-only {
+      padding: 0 20px;
+    }
+  }
+}
+
+.photo-archive__mountains__container {
+  position: relative;
+  background: $bg-color-9;
+  padding: 40px 0 70px;
+}
+
+.photo-archive__list {
+  // width: 3000px;
+
+  display: flex;
+}
+.photo-archive__content {
+  margin-bottom: 35px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $text-color-4;
+  font-size: $font-size-2;
+  font-weight: 700;
+
+  p {
+    margin: 0;
+  }
+}
+.photo-archive__list-wrap {
+  width: 100%;
+  overflow: hidden;
+  @include mobile-width-only {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+}
+.photo-archive__container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.photo-archive__slide-arrow-wrap {
+  position: absolute;
+  top: 30px;
+  right: 135px;
+  @include mobile-width-only {
+    display: none;
+  }
+}
+.photo-archive__slide__left {
+  margin-right: 18px;
+}
+
+.company-supervisor__card__name {
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-weight: 700;
+  @include mobile-width-only {
+    font-size: 14px;
+  }
+}
+
+.company-supervisor__card__email {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  color: inherit;
+  text-overflow: ellipsis;
+
+  @include mobile-width-only {
+    font-size: 14px;
+  }
+
+}
+
+.write__email {
+  display: inline;
+  margin-right: 5px;
+}
+.department {
+  margin-bottom: 34px;
+  @include media-desktop-max  {
+    margin-bottom: 0px;
+  }
+  @include mobile-width-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include media-mobile-max {
+    margin-bottom: 0;
+  }
+}
+
+.company-supervisor__link-email {
+  text-decoration: none;
+  color: $text-color-1;
+  &:hover {
+    text-decoration: none;
+    color: $text-color-7;
+  }
+}
+.mice-department__list__item {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  @include desktop-width {
+    margin-bottom: 30px;
+  }
+  @include large-tablet-width {
+    margin-bottom: 30px;
+  }
+  @include mobile-width-only {
+    width: 50%;
+    max-width: 170px;
+    padding: 0 13px;
+  }
+}
+.department-last__container {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  .department {
+    margin-bottom: 0;
+  }
+}
+.department-last__container .department {
+  //@include mobile-width-only {
+  //  width: 50%;
+  //}
+}
+.company-supervisor__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+
+  &.supervisor__img {
+    height: 270px;
+  }
+}
+.supervisor__img {
+  @include media-mobile-max {
+    // height: 331px;
+  }
+}
+
+.department__item__last {
+  @include mobile-width-only {
+    width: 100%;
+    height: auto;
+    // max-height: 200px;
+  }
+}
+
+.photo-archive__item__img {
+  margin: 0 auto;
+}
+
+.link__photo__archive {
+  &:hover {
+    text-decoration: none;
+    color: $text-color-4;
+  }
+}
+.photo-archive__title-top {
+  font-size: 16px;
+}
+
+.main__container {
+
+  @include mobile-width-only {
+    width: 100%;
+    max-width: 100%;
+    //padding: 0;
+  }
+}
+.navigation__link__сompany {
+  @include mobile-width-only {
+    padding-bottom: 8px;
+  }
+}

@@ -1,0 +1,170 @@
+.hotel-city__wrap {
+  @include section-p();
+  width: 100%;
+  background-color: #f5f6f7;
+}
+
+.hotel-city__title {
+  margin-bottom: 24px;
+  font-size: $font-size-5;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-4;
+  .hotel-city__title_color {
+    font-weight: 700;
+  }
+  .hotel-city__img-wrap {
+    margin-bottom: 6.5px;
+  }
+}
+
+.hotel-city__sub-title {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+
+.hotel-city__list-wrap {
+  margin: 0 auto;
+  max-width: 1010px;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include media-tablet-max {
+    padding: 0;
+  }
+}
+
+.hotel-city__list {
+  width: 100%;
+  column-count: 3;
+
+  @include media-tablet-max {
+    column-count: 2;
+  }
+
+  @media screen and (max-width: 600px) {
+    column-count: 1;
+  }
+
+  &.list--flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.hotel-city__list__item    {
+  width: 250px;
+  display: flex;
+  margin-top: 4px;
+
+  @media screen and (max-width: 600px) {
+    width: 280px;
+  }
+}
+
+.hotel-city__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  &:hover {
+    color: $text-color-4;
+    text-decoration: none;
+
+  }
+  .name__hotel {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: inherit;
+  }
+}
+
+.hotel-city__content-left {
+  margin-right: 15px;
+}
+
+.hotel-city__star-block {
+  flex-shrink: 0;
+  width: 50px;
+  height: 21px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hotel-city__star {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & .stars__hotel-wrap {
+    width: 8px;
+    margin: 0 1px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+.hotel-city__list-city {
+  padding-top: 15px;
+  //width: 33%;
+  //margin-top: 20px;
+  //padding: 0 15px;
+
+  //@include media-tablet-max {
+  //  width: 50%;
+  //}
+  //
+  //@media screen and (max-width: 600px) {
+  //  width: 100%
+  //}
+}
+
+
+.hotel-city__list-city-title {
+  margin: 0 auto 4px;
+  width: 250px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+
+  @media screen and (max-width: 600px) {
+    width: 280px;
+
+    text-transform: lowercase;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.hotel-city__list-wrap--with-city {
+  margin-top: -16px;
+}
+
+.hotel-city__list-one {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 280px;
+  }
+}

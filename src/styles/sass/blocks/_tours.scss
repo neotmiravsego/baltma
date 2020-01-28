@@ -1,0 +1,263 @@
+
+  .main__container-directions-populars {
+    width: 100%;
+    @include section-p();
+    //padding-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    //@include media-tablet-max(){
+    //  padding-bottom: 0;
+    //}
+    .populars__directions__title {
+      margin: 0;
+      font-size: 24px;
+      @include mobile-width-only {
+        font-size: 20px;
+      }
+    }
+    .populars__directions__title-wrap {
+      text-align: center;
+      margin-bottom: 29px;
+      width: 100%;
+      text-transform: uppercase;
+      color: $text-color-4;
+    }
+    .populars__directions {
+      display: flex;
+      width: 100%;
+      max-width: 1170px;
+      @include mobile-width-only {
+        margin-bottom: 0;
+      }
+      .populars__directions__card {
+        color: $text-color-2;
+        z-index: 1;
+        @include mobile-width-only {
+          height: 280px;
+        }
+        .populars__directions__title {
+          font-weight: 700;
+          @include mobile-width-only {
+            font-size: 20px;
+          }
+        }
+        .populars__directions__description__title {
+          font-size: 16px;
+          margin-bottom: 35px;
+          font-weight: 500;
+          @include mobile-width-only {
+            margin-bottom: 39px;
+          }
+        }
+        .populars__directions__description {
+          @include mobile-width-only {
+            max-width: 190px;
+          }
+        }
+      }
+      .populars__directions__left-bar {
+        margin-right: 30px;
+
+        width: 50%;
+        height: 482.63px;
+        @include mobile-width-only {
+          width: 100%;
+          margin: 0 0 35px;
+          height: 236px;
+        }
+        .populars__directions__card {
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+        }
+        &:hover .populars__directions__card__button {
+          background-color: $bg-color-4;
+          border-color: $bg-color-4;
+          outline-color: transparent;
+          color: $text-color-2;
+        }
+      }
+      .populars__directions__right-bar {
+        width: 50%;
+        @include mobile-width-only {
+          width: 100%;
+          margin: 0;
+        }
+        .populars__directions__card {
+          height: 223.76px;
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+          &:first-child {
+            margin-bottom: 35.2px;
+          }
+          &:hover .populars__directions__card__button {
+            background-color: $bg-color-4;
+            border-color: $bg-color-4;
+            outline-color: transparent;
+            color: $text-color-2;
+          }
+          @include mobile-width-only {
+            height: 236px;
+          }
+        }
+      }
+      .populars__directions__card__button {
+        color: $text-color-2;
+        padding: 11px 47px 13px;
+        border: solid 1px white;
+        border-radius: 0;
+        outline: none;
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+    }
+  }
+  .populars__directions__card {
+    position: relative;
+    .populars__directions__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center;
+      z-index: -2;
+      border-radius: 0;
+    }
+    .populars__directions__title {
+      margin-bottom: 2px;
+    }
+  }
+  .main__all__directions {
+    width: 100%;
+    max-width: 1170px;
+    @include desktop-width {
+      padding: 0 20px;
+      // max-width: 814px;
+    }
+    @include mobile-width-only {
+      padding: 0 20px;
+    }
+
+    @include large-mobile {
+    }
+    .main__all__directions__title__wrap {
+      margin-bottom: 30px;
+
+      text-align: center;
+      color: $text-color-4;
+      text-transform: uppercase;
+      @include mobile-width-only {
+        margin-bottom: 0px;
+      }
+    }
+    &__title {
+      margin: 62px 0 0;
+      font-size: 24px;
+      @include desktop-width {
+        margin: 34px 0 0;
+      }
+      @include large-tablet-width {
+        margin: 34px 0 0;
+      }
+      @include mobile-width-only {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+    .main__all__directions__list {
+      @include desktop-width {
+        justify-content: center;
+      }
+      @include list-reset();
+      display: flex;
+      margin: 0 -15px;
+      flex-wrap: wrap;
+      @include large-tablet-width {
+        justify-content: center;
+        margin: 0;
+      }
+      @include mobile-width-only {
+        margin: 0;
+      }
+      &__item {
+        padding: 0 15px;
+        margin-bottom: 35px;
+        @include desktop-width {
+          padding: 0 10px;
+          width: 33.33%;
+        }
+        @include mobile-width-only {
+          width: 100%;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      @include mobile-width-only {
+        flex-direction: column;
+      }
+    }
+  }
+  .main__container-directions-all {
+    width: 100%;
+    padding: 65px 0 70px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: $bg-color-7;
+    @include media-tablet-max {
+      padding: 30px 0 30px;
+    }
+  }
+  .main__container-directions-populars {
+    .populars__directions {
+      @include mobile-width-only {
+        flex-direction: column;
+      }
+    }
+  }
+
+
+
+.populars__directions__card:hover {
+  text-decoration: none;
+}
+.breadcrumbs__right-arrow__img {
+  fill: #ffffff;
+}
+
+.tours-slider__list .slick-list {
+  @include mobile-width-only {
+    padding: 0 15px;
+  }
+}
+.tours-slider .container {
+  @include mobile-width-only {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+  }
+}
+.tours-slider .slick-current {
+  @include mobile-width-only {
+  }
+}

@@ -1,0 +1,65 @@
+//.view-city {
+//  background-color: $bg-color-7;
+//  .country-overview__top-wrap {
+//    margin-bottom: 65px;
+//
+//    display: flex;
+//    align-items: center;
+//    @include mobile-width-only {
+//      margin-bottom: 28px;
+//    }
+//    .country-overview__title {
+//      margin: 0;
+//      padding: 0 7.5px;
+//
+//      font-size: 16px;
+//      white-space: nowrap;
+//      text-transform: uppercase;
+//      color: $text-color-4;
+//      font-weight: bold;
+//    }
+//    .country-overview__line {
+//      border: 1px solid $text-color-4;
+//      height: 1px;
+//      width: 100%;
+//    }
+//  }
+//  .country-overview__list-wrap {
+//    margin: 0 auto 0;
+//
+//    max-width: 962px;
+//    width: 100%;
+//    justify-content: center;
+//    @include mobile-width-only {
+//      margin: 0 auto 30px;
+//
+//      overflow: hidden;
+//      overflow-x: scroll;
+//    }
+//    .country-overview__list {
+//      padding-bottom: 10px;
+//      display: flex;
+//      font-size: 16px;
+//      justify-content: space-between;
+//      @include mobile-width-only {
+//        width: 800px;
+//      }
+//      &__item {
+//        width: 25%;
+//        padding: 30px;
+//        @include mobile-width-only {
+//          padding: 0 22px;
+//        }
+//        .country-overview__item__img {
+//          margin-bottom: 10px;
+//        }
+//      }
+//    }
+//  }
+//  .country-overview__item__title {
+//    font-weight: bold;
+//  }
+//}
+//.country-overview__item__img {
+//  margin-bottom: 10px;
+//}

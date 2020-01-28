@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <include src="src/html-const/head.html"></include>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="communication-form__wrap">
+      <button class="communication-form__close__button" onclick="closeForm()">
+        <img src="local/templates/site/img/formsImg/closE.png" alt="" class="communication-form__close__button__img">
+      </button>
+      <div class="communication-form__top-bar">
+        <div class="footer__logo-wrapper">
+          <a href="main.html" class="footer__logo logo">
+            <svg class="logo__img" width="57px" height="37px">
+              <use xlink:href="local/templates/site/img/sprite.svg#logo" />
+            </svg>
+          </a>
+        </div>
+        <div class="communication-form__buttons">
+          <button class="communication-button">Контакты</button>
+          <button class="communication-button button__communication">
+            Форма связи
+          </button>
+        </div>
+      </div>
+      <div class="map__wrap">
+        <img
+          src="local/templates/site/img/formsImg/map.png"
+          alt=""
+          class="map__wrap__img"
+        />
+      </div>
+      <div class="footer__info">
+        <img
+          class="footer__info-image-bg"
+          src="local/templates/site/img/footer/footer-bg.jpg"
+          alt="футер"
+          title="футер"
+          width="1440"
+          height="385"
+        />
+        <div class="footer__info-container">
+          <div class="footer__address-wrapper">
+            <p class="footer__address">
+              <span class="footer__address-index">236000</span>
+              <span class="footer__address-value">, </span>
+              <span class="footer__address-city">Россия, Калининград</span>
+              <span class="footer__address-value">, </span>
+              <span class="footer__address-street">пр. Мира, 94</span>
+            </p>
+          </div>
+          <div class="footer__contact-wrapper">
+            <p class="footer__contact">
+              <span class="footer__value"
+                >Телефон:
+                <a href="tel:+74012931931">+7 (4012) 931-931</a>;</span
+              >
+              <span class="footer__value"
+                >факс: <a href="tel:+74012211840">+7 (4012) 21-18-40</a></span
+              >
+              <span class="footer__value"
+                >E-mail:
+                <a href="mailto:postmaster@baltma.ru"
+                  >postmaster@baltma.ru</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  href="https://twitter.com"
+                  class="social__link"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <span class="visually-hidden">Twitter</span>
+                  <svg class="social__svg" width="15" height="13">
+                    <title>Twitter</title>
+                    <use
+                      xlink:href="local/templates/site/img/sprite.svg#twiter"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://instagram.com"
+                  class="social__link"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <span class="visually-hidden">Instagram</span>
+                  <svg class="social__svg" width="16" height="16">
+                    <title>Instagram</title>
+                    <use
+                      xlink:href="local/templates/site/img/sprite.svg#insta"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://vk.com"
+                  class="social__link"
+                  target="_blank"
+                  aria-label="Вконтакте"
+                >
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="social__svg" width="18" height="11">
+                    <title>Вконтакте</title>
+                    <use xlink:href="local/templates/site/img/sprite.svg#vk" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://facebook.com"
+                  class="social__link"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <span class="visually-hidden">Facebook</span>
+                  <svg class="social__svg" width="10" height="17">
+                    <title>Facebook</title>
+                    <use xlink:href="local/templates/site/img/sprite.svg#fb" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="communication-form">
+      <div class="contact-us__wrapper">
+        <form class="contact-us__form form">
+          <div class="form__fieldset">
+            <div class="form__wrapper">
+              <label class="form__label-input">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="Name"
+                  required
+                  data-valid="name"
+                  placeholder="Ваше имя"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="form__fieldset">
+            <div class="form__wrapper">
+              <label class="form__label-input">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  required
+                  data-valid="email"
+                  placeholder="Ваш E-mail"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="form__fieldset">
+            <div class="form__wrapper">
+              <label class="form__label-input">
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="phone"
+                  required
+                  data-valid="phone"
+                  placeholder="Ваш номер телефона"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="form__fieldset">
+            <div class="form__wrapper">
+              <label class="form__label-input">
+                <textarea
+                  class="form__textarea textarea-auto-height"
+                  name="comment"
+                  required
+                  data-valid="text"
+                  placeholder="Ваш вопрос"
+                  rows="1"
+                ></textarea>
+                <div class="form__textarea-div"></div>
+              </label>
+            </div>
+          </div>
+          <div class="form__fieldset">
+            <div class="form__checkbox-wrapper">
+              <label class="form__checkbox-label">
+                <input
+                  type="radio"
+                  class="visually-hidden"
+                  hidden
+                  required
+                  data-valid="checkbox"
+                  checked
+                />
+                <span class="form__checkbox">
+                  <svg class="form__checkbox-check" width="11px" height="8px">
+                    <use
+                      xlink:href="local/templates/site/img/sprite.svg#check"
+                    />
+                  </svg>
+                </span>
+                <span class="form__checkbox-title"
+                  >Согласен с
+                  <a href="#" target="_blank"
+                    >Политикой обработки персональных данных</a
+                  >
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form__fieldset form__fieldset--button">
+            <div class="form__wrapper">
+              <button class="form__button button button--gold" type="submit">
+                Свяжитесь со мной
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="search-form">
+      <div class="search-form__wrap">
+        <input type="text" class="input-search" />
+      </div>
+    </div>
+
+    <div class="search-form__result">
+      <div class="search-form">
+        <div class="search-form__wrap">
+          <input type="text" class="input-search" />
+        </div>
+      </div>
+      <div class="result-form__search">
+        <p class="result-form__search__title">
+          результаты поиска
+        </p>
+        <ul class="result-form__search__list">
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                Программы путешествий -
+                <span class="search__list__item__gold">Австрия</span>
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              … за дикими животными • 5 Австралия • 4
+              <span class="search__list__item__gold">Австрия</span> • 9
+              Аргентина • 9 Бельгия • 1 Ботсвана … • 4 Эквадор • 4 ЮАР • 12
+              Япония • 14 Австрия Баден (8 дней / 7 ночей) Вена для … (9 дней /
+              8 ночей) Многогранная Австрия: Вена, Бад-Ишль, Зальцбург, озеро …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                <span class="search__list__item__gold">Австрия</span>: погода по
+                месяцам, прогноз погоды на сегодня
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              Главная Погода в мире
+              <span class="search__list__item__gold">Австрия</span>. Погода
+              Австрия. Погода Климат … основные города и курорты. Австралия
+              Австрия Антигуа и Барбуда Аруба Багамские …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                Вечерняя Вена, Вена
+                <span class="search__list__item__gold">Австрия</span>
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              Главная Страны
+              <span class="search__list__item__gold">Австрия</span> Ишгль
+              Показать все отели + 19˚ .. +21˚ …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                Программы путешествий -
+                <span class="search__list__item__gold">Австрия</span>
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              … за дикими животными • 5 Австралия • 4
+              <span class="search__list__item__gold">Австрия</span> • 9
+              Аргентина • 9 Бельгия • 1 Ботсвана … • 4 Эквадор • 4 ЮАР • 12
+              Япония • 14 Австрия Баден (8 дней / 7 ночей) Вена для … (9 дней /
+              8 ночей) Многогранная Австрия: Вена, Бад-Ишль, Зальцбург, озеро …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                <span class="search__list__item__gold">Австрия</span>: погода по
+                месяцам, прогноз погоды на сегодня
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              Главная Погода в мире
+              <span class="search__list__item__gold">Австрия</span>. Погода
+              Австрия. Погода Климат … основные города и курорты. Австралия
+              Австрия Антигуа и Барбуда Аруба Багамские …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                Вечерняя Вена, Вена
+                <span class="search__list__item__gold">Австрия</span>
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              Главная Страны
+              <span class="search__list__item__gold">Австрия</span> Ишгль
+              Показать все отели + 19˚ .. +21˚ …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                Программы путешествий -
+                <span class="search__list__item__gold">Австрия</span>
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              … за дикими животными • 5 Австралия • 4
+              <span class="search__list__item__gold">Австрия</span> • 9
+              Аргентина • 9 Бельгия • 1 Ботсвана … • 4 Эквадор • 4 ЮАР • 12
+              Япония • 14 Австрия Баден (8 дней / 7 ночей) Вена для … (9 дней /
+              8 ночей) Многогранная Австрия: Вена, Бад-Ишль, Зальцбург, озеро …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                <span class="search__list__item__gold">Австрия</span>: погода по
+                месяцам, прогноз погоды на сегодня
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              Главная Погода в мире
+              <span class="search__list__item__gold">Австрия</span>. Погода
+              Австрия. Погода Климат … основные города и курорты. Австралия
+              Австрия Антигуа и Барбуда Аруба Багамские …
+            </p>
+          </li>
+          <li class="result-form__search__list__item">
+            <a href="#" class="search__list__item__link">
+              <p class="search__list__item__link__txt">
+                Вечерняя Вена, Вена
+                <span class="search__list__item__gold">Австрия</span>
+              </p>
+            </a>
+            <p class="search__list__item__description">
+              Главная Страны
+              <span class="search__list__item__gold">Австрия</span> Ишгль
+              Показать все отели + 19˚ .. +21˚ …
+            </p>
+          </li>
+        </ul>
+        <div class="other-tours__block-button">
+          <a href="#" class="other-tours__button button">
+            <svg class="other-tours__button-icon" width="10" height="12">
+              <use
+                xlink:href="local/templates/site/img/sprite.svg#reload"
+              ></use>
+            </svg>
+            <span class="other-tours__button__value">Показать ещё...</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@import "sass/fonts";
+@import "sass/variables";
+@import "sass/mixin";
+
+// lib
+@import "normalize";
+@import "sass/libs/bootstrap";
+@import "sass/libs/slick";
+@import "sass/libs/slick-theme.scss";
+@import "sass/libs/jquery.fancybox.scss";
+@import "sass/libs/daterangepicker.scss";
+
+@import "sass/common";
+
+
+
+// constant
+@import "sass/blocks/button";
+@import "sass/blocks/select";
+@import "sass/blocks/main-title";
+@import "sass/blocks/social";
+@import "sass/blocks/forms";
+@import "sass/blocks/sort-country";
+@import "sass/blocks/tour-cart";
+@import "sass/blocks/horizontal-scroller";
+
+// header
+@import "sass/blocks/header";
+@import "sass/blocks/menu-country";
+@import "sass/blocks/menu-relax";
+
+@import "sass/blocks/logo";
+@import "sass/blocks/navigation";
+@import "sass/blocks/footer";
+
+// main
+@import "sass/blocks/main-banner";
+@import "sass/blocks/sub-slider";
+@import "sass/blocks/pick-tours";
+@import "sass/blocks/main-route";
+@import "sass/blocks/main-services";
+@import "sass/blocks/reviews";
+@import "sass/blocks/contact-us";
+@import "sass/blocks/othher-tours";
+@import "sass/blocks/main-continent";
+@import "sass/blocks/slider-cart";
+
+// cart-tour
+@import "sass/blocks/comment";
+@import "sass/blocks/banner";
+@import "sass/blocks/tour";
+@import "sass/blocks/tour-route";
+@import "sass/blocks/tour-hotel";
+@import "sass/blocks/tour-gallery";
+@import "sass/blocks/check-list";
+@import "sass/blocks/booking-tour";
+@import "sass/blocks/tours-slider";
+
+// pages
+@import "sass/blocks/tours";
+@import "sass/blocks/austria";
+@import "sass/blocks/Kleinkirchheim";
+@import "sass/blocks/hotelList";
+@import "sass/blocks/typesRest";
+@import "sass/blocks/cityList";
+@import "sass/blocks/pulverer";
+@import "sass/blocks/MountainResort";
+@import "sass/blocks/company";
+@import "sass/blocks/notFound";
+@import "sass/blocks/awards";
+
+// slider
+@import "sass/blocks/slider";
+
+// списки 
+@import "sass/blocks/viewCity";
+@import "sass/blocks/listCitiesPhoto";
+@import "sass/blocks/additionalList";
+
+// navigation
+@import "sass/blocks/navigations";
+
+//хлебные крошки
+@import "sass/blocks/breadCrumbs";
+
+// popup
+@import "sass/blocks/popup";
+
+@import "sass/blocks/formsMain.scss";
+

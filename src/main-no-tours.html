@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <include src="src/html-const/head.html"></include>
+    <title>Главная</title>
+</head>
+
+<body>
+<include src="src/html-const/header.html"></include>
+<main>
+    <section class="main-banner">
+        <h1 class="visually-hidden">Baltma tours</h1>
+        <div class="main-banner__parallax "
+             style="background-image:url('local/templates/site/img/main-banner/europe.jpg')">
+        </div>
+        <div class="main-banner__slider">
+            <div class="main-banner__item">
+                <img class="main-banner__item-img-bg" src="local/templates/site/img/main-banner/europe.jpg" alt=""
+                     title="" width="" height="">
+                <div class="container">
+                    <div class="main-banner__title-block">
+                        <h2 class="main-banner__title">В самом сердце Европы</h2>
+                        <p class="main-banner__sub-title">Тур на маршрутах исторических железных дорог Европы.</p>
+                        <a href="#" class="main-banner__button button button--white-border">посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__item">
+                <img class="main-banner__item-img-bg" src="local/templates/site/img/main-banner/asia.jpg" alt=""
+                     title="" width="" height="">
+                <div class="container">
+                    <div class="main-banner__title-block">
+                        <h2 class="main-banner__title">Покоряем Азию</h2>
+                        <p class="main-banner__sub-title">Тур по самым экзотическим тропам древней цивилизации.</p>
+                        <a href="#" class="main-banner__button button button--white-border">посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__item">
+                <img class="main-banner__item-img-bg" src="local/templates/site/img/main-banner/africa.jpg" alt=""
+                     title="" width="" height="">
+                <div class="container">
+                    <div class="main-banner__title-block">
+                        <h2 class="main-banner__title">В самом сердце Африки</h2>
+                        <p class="main-banner__sub-title">Тур по самым экзотическим тропам Африки.</p>
+                        <a href="#" class="main-banner__button button button--white-border">посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__item">
+                <img class="main-banner__item-img-bg" src="local/templates/site/img/main-banner/America.jpg" alt=""
+                     title="" width="" height="">
+
+                <div class="container">
+                    <div class="main-banner__title-block">
+                        <h2 class="main-banner__title">Покоряем Америку</h2>
+                        <p class="main-banner__sub-title">Тур по самым экзотическим тропам древней цивилизации.</p>
+                        <a href="#" class="main-banner__button button button--white-border">посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__item">
+                <img class="main-banner__item-img-bg" src="local/templates/site/img/main-banner/australia.jpg"
+                     alt="" title="" width="" height="">
+                <div class="container">
+                    <div class="main-banner__title-block">
+                        <h2 class="main-banner__title">В самом сердце Австралии</h2>
+                        <p class="main-banner__sub-title">Тур на маршрутах Австралии.</p>
+                        <a href="#" class="main-banner__button button button--white-border">посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__item">
+                <img class="main-banner__item-img-bg" src="local/templates/site/img/main-banner/Island.jpg" alt=""
+                     title="" width="" height="">
+                <div class="container">
+                    <div class="main-banner__title-block">
+                        <h2 class="main-banner__title">Покоряем Острова</h2>
+                        <p class="main-banner__sub-title">Тур по самым экзотическим тропам древней цивилизации.</p>
+                        <a href="#" class="main-banner__button button button--white-border">посмотреть тур</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner__sub-slider sub-slider">
+            <div class="sub-slider__item">
+                <p class="sub-slider__text">Европа</p>
+            </div>
+            <div class="sub-slider__item">
+                <p class="sub-slider__text">Азия</p>
+            </div>
+            <div class="sub-slider__item">
+                <p class="sub-slider__text">Африка</p>
+            </div>
+            <div class="sub-slider__item">
+                <p class="sub-slider__text">Америка</p>
+            </div>
+            <div class="sub-slider__item">
+                <p class="sub-slider__text">Австралия</p>
+            </div>
+            <div class="sub-slider__item">
+                <p class="sub-slider__text">Острова</p>
+            </div>
+        </div>
+        <div class="main-banner__pick-tours pick-tours "
+             style="background-image:url('local/templates/site/img/main-banner/europe.jpg');">
+            <div class="container">
+                <div class="pick-tours__form-wrapper">
+                    <p class="pick-tours__title">подберите подходящий тур для себя</p>
+                    <form class="pick-tours__form">
+                        <div class="pick-tours__fieldset">
+                            <div class="pick-tours__select select">
+                                    <span class="select__placeholder" aria-label="Выпадающий список" tabindex="0">
+                                        <span class="value">Австралия</span>
+                                        <span class="select__placeholder-svg">
+                                            <svg width="12" height="8">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                <div class="select__scrollbar">
+                                    <div class="select__body">
+                                        <a class="select__item" data-value="europe" tabindex="0">Европа</a>
+                                        <a class="select__item" data-value="asia" tabindex="0">Азия</a>
+                                        <a class="select__item" data-value="africa" tabindex="0">Африка</a>
+                                        <a class="select__item" data-value="america" tabindex="0">Америка</a>
+                                        <a class="select__item" data-value="australia" tabindex="0">Австралия</a>
+                                        <a class="select__item" data-value="island" tabindex="0">Острова</a>
+                                        <a class="select__item" data-value="all" tabindex="0">Все направления</a>
+                                    </div>
+                                    <div class="select__track">
+                                        <div class="select__bar"></div>
+                                    </div>
+                                </div>
+                                <label class="visually-hidden">
+                                    <input class="visually-hidden" type="text" name="Country" hidden tabIndex="-1"
+                                           placeholder="NoTabIndex" value="all">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <div class="pick-tours__select select">
+                                    <span class="select__placeholder" aria-label="Выпадающий список" tabindex="0">
+                                        <span class="value">Экзотический
+                                            тур</span>
+                                        <span class="select__placeholder-svg">
+                                            <svg width="12" height="8">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                <div class="select__scrollbar">
+                                    <div class="select__body">
+                                        <a class="select__item" data-value="Adventure" tabindex="0">Приключенческий
+                                            тур и экспедиции</a>
+                                        <a class="select__item" data-value="Exotic" tabindex="0">Экзотический
+                                            тур</a>
+                                        <a class="select__item" data-value="Cultural" tabindex="0">Культурные
+                                            столицы мира</a>
+                                        <a class="select__item" data-value="Tropical" tabindex="0">Тропические
+                                            острова</a>
+                                        <a class="select__item" data-value="Marine" tabindex="0">Морские и речные
+                                            круизы</a>
+                                        <a class="select__item" data-value="Rail" tabindex="0">Железнодорожные
+                                            путешествия</a>
+                                        <a class="select__item" data-value="Alpine" tabindex="0">Горнолыжные
+                                            курорты</a>
+                                        <a class="select__item" data-value="SPA" tabindex="0">SPA и Relax
+                                            тур</a>
+                                        <a class="select__item" data-value="all" tabindex="0">Все туры</a>
+                                    </div>
+                                    <div class="select__track">
+                                        <div class="select__bar"></div>
+                                    </div>
+                                </div>
+                                <label class="visually-hidden">
+                                    <input class="visually-hidden" type="text" name="tours" hidden tabIndex="-1"
+                                           placeholder="NoTabIndex" value="all">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <label class="pick-tours__label">
+                                <input class="pick-tours__date js-date-picker" type="text" placeholder="Период" value="21.12.2019 - 23.01.2020">
+                                <span class="pick-tours__icon">
+                                        <svg class="pick-tours__svg" width="18" height="20">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#calendar" />
+                                        </svg>
+                                    </span>
+                            </label>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <button class="pick-tours__button button button--white-border">Подобрать тур</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="main-banner__tours-slider tours-slider active">
+                    <div class="tours-slider__list" style="display: none;">
+                        <article class="tours-slider__item tour-cart active">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-1.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                                    <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">5 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">34 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tours-slider__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-2.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">В самом сердце Европы</h3>
+                                    <p class="tour-cart__date">2–20 Мая, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">18 дней</p>
+                                        <p class="tour-cart__city">8 городов</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">70 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tours-slider__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-3.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Прогулки на свежем воздухе</h3>
+                                    <p class="tour-cart__date">5–12 Июня, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">4 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">48 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tours-slider__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-1.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                                    <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">5 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">34 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="tours-slider__item tour-cart tour-cart--empty">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__logo-block">
+                                    <svg class="tour-cart__logo" width="268" height="155">
+                                        <use xlink:href="local/templates/site/img/sprite.svg#logo" />
+                                    </svg>
+                                </div>
+                                <p class="tour-cart__show-more">
+                                    <span class="tour-cart__value">Посмотреть все туры</span>
+                                    <svg class="tour-cart__arrow-text" width="20" height="15">
+                                        <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                    </svg>
+                                </p>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="tours-slider__no-founded" style="display: block;">
+                        <p class="tours-slider__no-founded-text">Подходящиъ туров не найдено</p>
+                        <p class="tours-slider__no-founded-text">Измените форму запроса <br>или позвоните нам для уточнения</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="main-route">
+        <div class="container">
+            <h2 class="main-title main-route__title">Направления</h2>
+            <p class="main-title__sub-title  main-route__sub-title">Мы предлагаем индивидуальные VIP-программы,<br>
+                которые нацелены на удовлетворение изысканных запросов. </p>
+            <ul class="main-route__list">
+                <li class="main-rout__item">
+                    <a class="main-rout__link" href="#">
+                        <img class="main-rout__item-image"
+                             src="local/templates/site/img/main-route/main-route-1.png" alt="Luxury Travel"
+                             title="Направления" width="370" height="248">
+                        <div class="main-rout__item-block">
+                            <p class="main-rout__item-title">Luxury Travel</p>
+                            <!-- <p class="main-rout__item-text">Лучшее на берегах Балтики</p> -->
+                        </div>
+                    </a>
+                </li>
+                <li class="main-rout__item">
+                    <a class="main-rout__link" href="#">
+                        <img class="main-rout__item-image"
+                             src="local/templates/site/img/main-route/main-route-2.png" alt="Luxury Travel"
+                             title="Направления" width="370" height="248">
+                        <div class="main-rout__item-block">
+                            <p class="main-rout__item-title">MICE</p>
+                            <!-- <p class="main-rout__item-text">Бизнес-мероприятия</p> -->
+                        </div>
+                    </a>
+                </li>
+                <li class="main-rout__item">
+                    <a class="main-rout__link" href="#">
+                        <img class="main-rout__item-image"
+                             src="local/templates/site/img/main-route/main-route-3.png" alt="Luxury Travel"
+                             title="Направления" width="370" height="248">
+                        <div class="main-rout__item-block">
+                            <p class="main-rout__item-title">Centeral Baltic</p>
+                            <!-- <p class="main-rout__item-text">Туры в Калининград</p> -->
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <p class="main-rout__text">А также туры в 77 стран мира любой категории сложности.<br>
+                От стандартных групповых туров до индивидуальных VIP-программ. </p>
+        </div>
+
+    </section>
+    <section class="main-continent">
+        <h2 class="visually-hidden">Направления и туры</h2>
+        <div class="main-continent__continent">
+            <div class="container container-Main__Mob">
+
+                <button class="main-continent__continent-placholder" onclick="openCardBurger()" >
+                    <span class="main-continent__continent-text text__europa">европа</span>
+                    <span class="select__placeholder-svg">
+                                    <svg width="12" height="8">
+                                        <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                    </svg>
+                                </span>
+                </button>
+                <div class="main-continent__list__container">
+                    <div class="main-continent__continent-list">
+                        <button class="main-continent__continent-item active"  data-slide="0">
+                                        <span class="main-continent__continent-block">
+                                            <svg class="main-continent__continent-image" width="127" height="103">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#europe" />
+                                            </svg>
+                                        </span>
+                            <span class="main-continent__continent-text">европа</span>
+                        </button>
+                        <button class="main-continent__continent-item" data-slide="1">
+                                        <span class="main-continent__continent-block">
+                                            <svg class="main-continent__continent-image" width="104" height="104">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#asia" />
+                                            </svg>
+                                        </span>
+                            <span class="main-continent__continent-text">Азия и австралия</span>
+                        </button>
+                        <button class="main-continent__continent-item" data-slide="2">
+                                        <span class="main-continent__continent-block">
+                                            <svg class="main-continent__continent-image" width="97" height="104">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#africa" />
+                                            </svg>
+                                        </span>
+                            <span class="main-continent__continent-text">Африка</span>
+                        </button>
+                        <button class="main-continent__continent-item" data-slide="3">
+                                        <span class="main-continent__continent-block">
+                                            <svg class="main-continent__continent-image" width="89" height="104">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#america" />
+                                            </svg>
+                                        </span>
+                            <span class="main-continent__continent-text">Америка</span>
+                        </button>
+                        <button class="main-continent__continent-item" data-slide="4">
+                                        <span class="main-continent__continent-block">
+                                            <svg class="main-continent__continent-image" width="72" height="104">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#baltic" />
+                                            </svg>
+                                        </span>
+                            <span class="main-continent__continent-text">Балтика</span>
+                        </button>
+                        <button class="main-continent__continent-item" data-slide="5">
+                                        <span class="main-continent__continent-block">
+                                            <svg class="main-continent__continent-image" width="102" height="104">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#island" />
+                                            </svg>
+                                        </span>
+                            <span class="main-continent__continent-text">Острова</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-continent__parallax" data-parallax="scroll"
+             data-mirror-container=".main-continent__parallax"
+             data-image-src="local/templates/site/img/main-continent/europe.jpg">
+        </div>
+
+        <button class="main-continent__prev" type="button"><svg width="45" height="102"
+                                                                viewBox="0 0 45.249 102.017">
+            <path d="M0,0,51.916,43.163,100.715,0" transform="translate(44.48 0.639) rotate(90)" fill="none"
+                  stroke="inherit" /></svg></button>
+        <div class="main-continent__main">
+            <div class="main-continent__main-item" data-item-slide="0">
+
+                <div class="container main__container">
+                    <div class="main-continent__slider">
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/europe.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Европа</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/asia.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Европа</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-continent__main-item" data-item-slide="1">
+
+                <div class="container main__container">
+                    <div class="main-continent__slider">
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/asia.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Азия</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">Экспедиция</h3>
+                                        <p class="slider-cart__info-text"> 5 стран Юго-Восточной Азии
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 августа, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">14 дней</p>
+                                            <p class="slider-cart__info-city">5 городов</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">97 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/africa.jpg" alt="" title=""
+                                 width="1440" height="800">
+
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Австралия</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/europe.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Австралия</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-continent__main-item" data-item-slide="2">
+                <div class="container main__container">
+                    <div class="main-continent__slider">
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/africa.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">АФрика</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/europe.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">АФрика</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">Сафари и пирамиды</h3>
+                                        <p class="slider-cart__info-text"> Тур с перелетом из Калининграда, с
+                                            посещением Гизы и Луксора</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">14-25 сентября, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">10 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">45 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/africa.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">АФрика</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-continent__main-item" data-item-slide="3">
+
+                <div class="container main__container">
+                    <div class="main-continent__slider">
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/america.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Америка</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">Почувствуй американскую свободу и
+                                            прикоснись к своей мечте</h3>
+                                        <p class="slider-cart__info-text">посетить Западное Побережье США</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июля, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">7 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">120 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/africa.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Америка</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-continent__main-item" data-item-slide="4">
+                <div class="container main__container">
+                    <div class="main-continent__slider">
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/baltic.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Балтика</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">Три столицы Балтики</h3>
+                                        <p class="slider-cart__info-text">Экскурсионный тур на автобусе и пароме
+                                            в
+                                            Латвию, Швецию и Эстонию из Санкт-Петербурга по маршруту: Рига -
+                                            Стокгольм - Таллин.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">20-30 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">10 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">25 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/europe.jpg"
+                                 data-src="local/templates/site/img/main-continent/america.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Балтика</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-continent__main-item" data-item-slide="5">
+                <div class="container main__container">
+                    <div class="main-continent__slider">
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/island.jpg"
+                                 data-src="local/templates/site/img/main-continent/america.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Острова</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">Авторский тур</h3>
+                                        <p class="slider-cart__info-text">Острова Андаманского моря </p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–17 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">12 дней</p>
+                                            <p class="slider-cart__info-city">3 острова</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">125 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="main-continent__slider-item">
+                            <img class="main-continent__slider-bg"
+                                 src="local/templates/site/img/main-continent/island.jpg"
+                                 data-src="local/templates/site/img/main-continent/baltic.jpg" alt="" title=""
+                                 width="1440" height="800">
+                            <article class="slider-cart">
+                                <div class="slider-cart__country">
+                                    <p class="slider-cart__country-title">Острова</p>
+                                    <div class="slider-cart__tour">
+                                        <svg class="slider-cart__tour-svg" width="29" height="31">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#culture-capital" />
+                                        </svg>
+                                        <a href="" class="slider-cart__tour-text">
+                                                <span class="slider-cart__tour-value">культурные <br>столицы
+                                                    мира</span>
+                                            <svg class="slider-cart__tour-arrow" width="13" height="10">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#right-arrow" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-cart__info">
+                                    <div class="slider-cart__info-wrapper slider-cart__info-wrapper--title">
+                                        <h3 class="slider-cart__info-title">В самом сердце Европы</h3>
+                                        <p class="slider-cart__info-text">Тур строится на маршрутах исторических
+                                            железных дорог Европы железных дорог Европы.</p>
+                                    </div>
+                                    <div class="slider-cart__info-wrapper">
+                                        <p class="slider-cart__info-date">5–12 Июня, 2019</p>
+                                        <div class="slider-cart__info-time-city">
+                                            <p class="slider-cart__info-time">4 дней</p>
+                                            <p class="slider-cart__info-city">3 города</p>
+                                        </div>
+                                        <p class="slider-cart__info-cost">
+                                            <span class="slider-cart__info-value">48 000</span>
+                                            <span class="slider-cart__info-currency">₽</span>
+                                        </p>
+                                    </div>
+                                    <div class="slider-cart__info-button-block">
+                                        <a href="" class="slider-cart__info-button button">Подробнее</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="main-continent__next" type="button"><svg width="45" height="102"
+                                                                viewBox="0 0 45.249 102.017">
+            <path d="M0,0,51.916,43.163,100.715,0" transform="translate(44.48 0.639) rotate(90)" fill="none"
+                  stroke="inherit" /></svg></button>
+        </div>
+    </section>
+    <section class="other-tours">
+        <div class="container container-other-tours">
+            <h2 class="main-title other-tours__title">другие направления <span
+                    class="other-tours__title-value">Европы</span></h2>
+            <div class="other-tours__container">
+                <div class="other-tours__form-block  pick-tours">
+                    <form class="pick-tours__form ">
+                        <div class="pick-tours__fieldset">
+                            <div class="pick-tours__select select">
+                                    <span class="select__placeholder" aria-label="Выпадающий список" tabindex="0">
+                                        <span class="value">направление</span>
+                                        <span class="select__placeholder-svg">
+                                            <svg width="12" height="8">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                <div class="select__scrollbar">
+                                    <div class="select__body">
+                                        <a class="select__item" data-value="europe" tabindex="0">Европа</a>
+                                        <a class="select__item" data-value="asia" tabindex="0">Азия</a>
+                                        <a class="select__item" data-value="africa" tabindex="0">Африка</a>
+                                        <a class="select__item" data-value="america" tabindex="0">Америка</a>
+                                        <a class="select__item" data-value="australia" tabindex="0">Австралия</a>
+                                        <a class="select__item" data-value="island" tabindex="0">Острова</a>
+                                        <a class="select__item" data-value="all" tabindex="0">Все направления</a>
+                                    </div>
+                                    <div class="select__track">
+                                        <div class="select__bar"></div>
+                                    </div>
+                                </div>
+                                <label class="visually-hidden">
+                                    <input class="visually-hidden" type="text" name="Country" hidden tabIndex="-1"
+                                           placeholder="NoTabIndex" value="all">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <div class="pick-tours__select select">
+                                    <span class="select__placeholder" aria-label="Выпадающий список" tabindex="0">
+                                        <span class="value">Тип тура</span>
+                                        <span class="select__placeholder-svg">
+                                            <svg width="12" height="8">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                <div class="select__scrollbar">
+                                    <div class="select__body">
+                                        <a class="select__item" data-value="Adventure" tabindex="0">Приключенческий
+                                            тур и экспедиции</a>
+                                        <a class="select__item" data-value="Exotic" tabindex="0">Экзотический
+                                            тур</a>
+                                        <a class="select__item" data-value="Cultural" tabindex="0">Культурные
+                                            столицы мира</a>
+                                        <a class="select__item" data-value="Tropical" tabindex="0">Тропические
+                                            острова</a>
+                                        <a class="select__item" data-value="Marine" tabindex="0">Морские и речные
+                                            круизы</a>
+                                        <a class="select__item" data-value="Rail" tabindex="0">Железнодорожные
+                                            путешествия</a>
+                                        <a class="select__item" data-value="Alpine" tabindex="0">Горнолыжные
+                                            курорты</a>
+                                        <a class="select__item" data-value="SPA" tabindex="0">SPA и Relax
+                                            тур</a>
+                                        <a class="select__item" data-value="all" tabindex="0">Все туры</a>
+                                    </div>
+                                    <div class="select__track">
+                                        <div class="select__bar"></div>
+                                    </div>
+                                </div>
+                                <label class="visually-hidden">
+                                    <input class="visually-hidden" type="text" name="tours" hidden tabIndex="-1"
+                                           placeholder="NoTabIndex" value="all">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <label class="pick-tours__label">
+                                <input class="pick-tours__date js-date-picker" type="text" placeholder="Период">
+                                <span class="pick-tours__icon">
+                                        <svg class="pick-tours__svg" width="18" height="20">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#calendar" />
+                                        </svg>
+                                    </span>
+                            </label>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <button class="pick-tours__button button">Подобрать тур</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="other-tours__wrapper">
+                    <div class="other-tours__sort-country sort-country">
+                        <ul class="sort-country__list">
+                            <li class="sort-country__item active">
+                                <a href="#" class="sort-country__link">Все страны</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Австрия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Германия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Греция</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Дания</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Испания</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Италия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Латвия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Литва</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Мальта</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Нидерланды</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="other-tours__list">
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-1.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                                    <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">5 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">34 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-2.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">В самом сердце Европы</h3>
+                                    <p class="tour-cart__date">2–20 Мая, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">18 дней</p>
+                                        <p class="tour-cart__city">8 городов</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">70 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/tour-cart/tour-cart-3.jpg"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Прогулки на свежем воздухе</h3>
+                                    <p class="tour-cart__date">5–12 Июня, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">4 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">48 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="other-tours__block-button">
+                        <a href="#" class="other-tours__button button">
+                            <svg class="other-tours__button-icon" width="10" height="12">
+                                <use xlink:href="local/templates/site/img/sprite.svg#reload" />
+                            </svg>
+                            <span class="other-tours__button__value">Показать ещё</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-services">
+        <div class="container container__services__list">
+            <h2 class="main-title main-services__title">Наши услуги</h2>
+            <div class="main-services__list__container">
+                <ul class="main-services__list">
+                    <li class="main-services__item">
+                        <a class="main-services__link" href="#">
+                            <div class="main-services__image-block">
+                                <img class="main-services__image "
+                                     src="local/templates/site/img/main-services/main-services-1.jpg"
+                                     alt="Отели по всему миру" title="услуги" width="270" height="205">
+                            </div>
+                            <div class=" main-services__block">
+                                <h3 class="main-services__item-title">Отели по всему миру</h3>
+                                <span class="main-services__button button">Бронирование</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="main-services__item">
+                        <a class="main-services__link" href="#">
+                            <div class="main-services__image-block">
+                                <img class="main-services__image"
+                                     src="local/templates/site/img/main-services/main-services-2.jpg"
+                                     alt="Отели в Прибалтике" title="услуги" width="270" height="205">
+                            </div>
+                            <div class=" main-services__block">
+                                <h3 class="main-services__item-title">Отели в Прибалтике</h3>
+                                <span class="main-services__button button">Бронирование</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="main-services__item">
+                        <a class="main-services__link" href="#">
+                            <div class="main-services__image-block">
+                                <img class="main-services__image "
+                                     src="local/templates/site/img/main-services/main-services-3.jpg"
+                                     alt="Загородные виллы" title="услуги" width="270" height="205">
+                            </div>
+                            <div class=" main-services__block">
+                                <h3 class="main-services__item-title">Загородные виллы</h3>
+                                <span class="main-services__button button">Бронирование</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-services__item">
+                        <a class="main-services__link" href="#">
+                            <div class="main-services__image-block">
+                                <img class="main-services__image "
+                                     src="local/templates/site/img/main-services/main-services-4.jpg"
+                                     alt="Морские круизы" title="услуги" width="270" height="205">
+                            </div>
+                            <div class=" main-services__block">
+                                <h3 class="main-services__item-title">Морские круизы</h3>
+                                <span class="main-services__button button">Бронирование</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact-us">
+        <div class="container">
+            <h2 class="main-title contact-us__title">Связаться с нами</h2>
+            <p class="main-title__sub-title contact-us__sub-title">Наш опыт позволяет нам решать без труда
+                задачи
+                любой сложности <br>
+                и мы всегда рады помочь Вам с выбором тура.<br>
+                Заполните форму и мы свяжемся с Вами для уточнения деталей.</p>
+            <div class="contact-us__wrapper">
+                <form class="contact-us__form form">
+                    <div class="form__fieldset">
+                        <div class="form__wrapper">
+                            <label class="form__label-input">
+                                <input class="form__input" type="text" name="Name" required data-valid="name"
+                                       placeholder="Ваше имя">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__fieldset">
+                        <div class="form__wrapper">
+                            <label class="form__label-input">
+                                <input class="form__input" type="email" name="email" required data-valid="email"
+                                       placeholder="Ваш E-mail">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__fieldset">
+                        <div class="form__wrapper">
+                            <label class="form__label-input">
+                                <input class="form__input" type="tel" name="phone" required data-valid="phone"
+                                       placeholder="Ваш номер телефона">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__fieldset">
+                        <div class="form__wrapper">
+                            <label class="form__label-input">
+                                    <textarea class="form__textarea textarea-auto-height" name="comment" required
+                                              data-valid="text" placeholder="Комментарий" rows="1"></textarea>
+                                <span class="form__textarea-div"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__fieldset">
+                        <div class="form__checkbox-wrapper">
+                            <label class="form__checkbox-label">
+                                <input type="radio" class="visually-hidden" hidden required data-valid="checkbox"
+                                       checked>
+                                <span class="form__checkbox">
+                                        <svg class="form__checkbox-check" width="11px" height="8px">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#check" />
+                                        </svg>
+                                    </span>
+                                <span class="form__checkbox-title">Согласен с
+                                        <a href="#" target="_blank">Политикой обработки
+                                            персональных данных</a>
+                                    </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__fieldset form__fieldset--button">
+                        <div class="form__wrapper">
+                            <button class="form__button button button--gold" type="submit">Свяжитесь со
+                                мной</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__block-title">
+            <div class="container">
+                <h2 class="main-title reviews__title">Отзывы наших клиентов</h2>
+            </div>
+        </div>
+        <div class="reviews__slider">
+            <div class="reviews__item">
+                <img class="reviews__image-bg" src="local/templates/site/img/reviews/turkey.jpg" alt="Отзывы Мариам"
+                     title="Отзывы" width="1440" height="557">
+                <div class="container">
+                    <div class="reviews__item-wrapper">
+                        <div class="reviews__photo-block">
+                            <img class="reviews__photo" src="local/templates/site/img/reviews/Mariam.jpg"
+                                 alt="Мариам" title="Мариам" width="72" height="72">
+                            <span class="reviews__triangle"></span>
+                        </div>
+                        <p class="reviews__item-name">Мариам</p>
+                        <p class="reviews__item-about">Про Аланию</p>
+                        <div class="reviews__item-block">
+                            <p class="reviews__item-text">В Алании есть всё для прекрасного отдыха н море: теплый
+                                климат, целебный воздух, замечательные песчаные пляжи,чистое море, а также
+                                живописная историческая часть.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <img class="reviews__image-bg" src="local/templates/site/img/reviews/Dubai.jpg" alt="Отзывы Мариам"
+                     title="Отзывы" width="1440" height="557">
+                <div class="container">
+                    <div class="reviews__item-wrapper">
+                        <div class="reviews__photo-block">
+                            <img class="reviews__photo" src="local/templates/site/img/reviews/Konstantin.jpg"
+                                 alt="Мариам" title="Мариам" width="72" height="72">
+                            <span class="reviews__triangle"></span>
+                        </div>
+                        <p class="reviews__item-name">Константин</p>
+                        <p class="reviews__item-about">Про Дубай</p>
+                        <div class="reviews__item-block">
+                            <p class="reviews__item-text">Дубай – город-сказка, город-мечта. Когда попадаешь в его
+                                сети, действительно о многом забываешь. Город технологий, небоскребов и всего
+                                самого-самого: большого, высокого, стильного</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <img class="reviews__image-bg" src="local/templates/site/img/reviews/reviews-3.jpg"
+                     alt="Отзывы Мариам" title="Отзывы" width="1440" height="557">
+                <div class="container">
+                    <div class="reviews__item-wrapper">
+                        <p class="reviews__item-name">Лидия</p>
+                        <p class="reviews__item-about">Про Милан</p>
+                        <div class="reviews__item-block">
+                            <p class="reviews__item-text">Отличное место, если хочется тишины. А людный центр в
+                                шаговой доступности. Первый этаж весь общий, на втором этаже спальни. Вся мебель
+                                новая и чистая, а комнаты светлые. В большую комнату даже поместилась наша
+                                компания
+                                из 5 человек.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<include src="src/html-const/footer.html"></include>
+<include src="src/html-const/scripts.html"></include>
+</body>
+
+</html>

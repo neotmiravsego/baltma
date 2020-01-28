@@ -1,0 +1,171 @@
+.tours-slider {
+  width: 100%;
+  padding: 58px 0 70px;
+  background-color: $bg-color-3;
+  @include media-mobile-max {
+    padding: 25px 0 50px;
+  }
+
+}
+
+
+.main-banner__tours-slider.tours-slider {
+  display: none;
+  background-color: transparent; }
+.main-banner__tours-slider.tours-slider.active {
+  display: block; }
+
+.tours-slider__title {
+  margin-bottom: 30px;
+}
+
+.tours-slider__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-top: -40px;
+
+
+  & .slick-track,
+  & .slick-list {
+    min-width: 100%;
+  }
+
+  @include media-small-tablet-max(){
+    margin:-40px 0 0;
+  }
+
+
+}
+
+.tours-slider__item {
+  width: calc(33.333% - 30px);
+  min-width: 395px;
+  margin: 40px  0 0;
+  padding: 0 15px;
+
+
+
+  @include media-desktop-max {
+    min-width: 310px;
+  }
+  @include media-tablet-max {
+    min-width: 355px;
+  }
+
+  @include media-small-tablet-max {
+    min-width: auto;
+    width: 340px;
+  }
+
+  @media screen and (max-width: 400px){
+    min-width: auto;
+    width: 280px;
+  }
+}
+
+.tours-slider__list.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.tours-slider .slick-initialized .slick-slide,
+.tours-slider .slick-track {
+  display: flex;
+  outline-color: transparent;
+}
+
+.tours-slider .slick-next,
+.tours-slider .slick-prev {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+
+  background-color: $bg-color-1;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    outline-color: transparent;
+  }
+
+  &:hover svg,
+  &:active svg {
+    stroke: $bg-color-4;
+  }
+
+  &:active {
+    background-color: $bg-color-7;
+  }
+
+  &.slick-disabled {
+    opacity: 0;
+  }
+
+  @include media-small-tablet-max() {
+    display: none!important;
+  }
+}
+
+.tours-slider .slick-next::before,
+.tours-slider .slick-prev::before {
+  display: none;
+}
+
+.tours-slider .slick-next svg,
+.tours-slider .slick-prev svg {
+  width: 12px;
+  height: 30px;
+  max-width: 100%;
+  max-height: 100%;
+
+  stroke: $bg-color-3;
+  stroke-width: 2px;
+  transition: 0.2s;
+}
+
+.tours-slider .slick-prev {
+  left: -15px;
+  @include mobile-width-only {
+    display:none;
+  }
+
+}
+
+.tours-slider .slick-next {
+  right: -15px;
+  @include mobile-width-only {
+    display:none;
+  }
+
+}
+
+.tours-slider .slick-next svg {
+  transform: rotate(180deg);
+}
+
+
+.tours-slider__no-founded {
+  width: 100%;
+  max-width: 350px;
+  margin: 40px auto 0;
+}
+
+.tours-slider__no-founded-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+
+  &:not(:last-child){
+    margin-bottom: 15px;
+  }
+}

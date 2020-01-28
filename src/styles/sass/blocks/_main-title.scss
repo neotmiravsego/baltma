@@ -1,0 +1,37 @@
+.main-title {
+  @include mp-reset();
+  @include font-family-T();
+  margin-bottom: 22px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 41px;
+  text-align: center;
+  color: $text-color-4;
+  text-transform: uppercase;
+  //@include mobile-width-only {
+  //  font-size: 20px;
+  //}
+
+  @include media-mobile-max {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+}
+
+.main-title__sub-title {
+  @include mp-reset();
+  max-width: 600px;
+  margin: 0 auto 35px;
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: $text-color-3;
+
+  @include media-mobile-max {
+    padding: 0 20px;
+    margin: 0 auto 20px;
+  }
+}

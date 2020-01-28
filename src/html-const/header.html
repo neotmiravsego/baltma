@@ -1,0 +1,1014 @@
+<svg class="blur-svg" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="8" />
+    <!-- comment out feComponentTransfer to remove the darkness -->
+    <feComponentTransfer>
+      <feFuncR type="linear" slope="0.9" />
+      <feFuncG type="linear" slope="0.9" />
+      <feFuncB type="linear" slope="0.9" />
+    </feComponentTransfer>
+  </filter>
+</svg>
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 header__container">
+        <div class="header__logo-wrapper">
+          <a href="main.html" class="header__logo logo">
+            <svg class="logo__img" width="57px" height="37px">
+              <use xlink:href="local/templates/site/img/sprite.svg#logo" />
+            </svg>
+          </a>
+        </div>
+        <button class="burger__header" onclick="openBurger()">
+          <p class="burger__header__txt">
+            меню
+          </p>
+          <img
+            src="local/templates/site/img/burgerOpen.png"
+            alt=""
+            class="burger__img__open"
+          />
+          <img
+            src="local/templates/site/img/burgerClos.png"
+            alt=""
+            class="burger__img__close"
+          />
+        </button>
+        <div class="header__navigation">
+          <div class="header__navigation-block">
+            <nav class="navigation header__navigation-main">
+              <ul class="navigation__list navigation__list--main">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link js-menu-link">
+                    <span class="navigation__link-text">СТРАНЫ МИРА</span>
+                    <svg class="navigation__link-arrow" width="12" height="14">
+                      <use
+                        xlink:href="local/templates/site/img/sprite.svg#select-arrow"
+                      />
+                    </svg>
+                  </a>
+                  <div class="navigation__block menu-country">
+                    <div class="menu-country__container">
+                      <div class="menu-accordion__container">
+                        <div class="menu-country__accordion">
+                          <button
+                            class="menu-country__accordion-item active"
+                            data-accordion="0"
+                          >
+                            <span class="menu-country__accordion-block">
+                              <svg
+                                class="menu-country__accordion-image"
+                                width="127"
+                                height="103"
+                              >
+                                <use
+                                  xlink:href="local/templates/site/img/sprite.svg#europe"
+                                />
+                              </svg>
+                            </span>
+                            <span class="menu-country__accordion-text"
+                              >европа</span
+                            >
+                          </button>
+                          <button
+                            class="menu-country__accordion-item"
+                            data-accordion="1"
+                          >
+                            <span class="menu-country__accordion-block">
+                              <svg
+                                class="menu-country__accordion-image"
+                                width="104"
+                                height="104"
+                              >
+                                <use
+                                  xlink:href="local/templates/site/img/sprite.svg#asia"
+                                />
+                              </svg>
+                            </span>
+                            <span class="menu-country__accordion-text"
+                              >Азия и австралия</span
+                            >
+                          </button>
+                          <button
+                            class="menu-country__accordion-item"
+                            data-accordion="2"
+                          >
+                            <span class="menu-country__accordion-block">
+                              <svg
+                                class="menu-country__accordion-image"
+                                width="97"
+                                height="104"
+                              >
+                                <use
+                                  xlink:href="local/templates/site/img/sprite.svg#africa"
+                                />
+                              </svg>
+                            </span>
+                            <span class="menu-country__accordion-text"
+                              >Африка</span
+                            >
+                          </button>
+                          <button
+                            class="menu-country__accordion-item"
+                            data-accordion="3"
+                          >
+                            <span class="menu-country__accordion-block">
+                              <svg
+                                class="menu-country__accordion-image"
+                                width="89"
+                                height="104"
+                              >
+                                <use
+                                  xlink:href="local/templates/site/img/sprite.svg#america"
+                                />
+                              </svg>
+                            </span>
+                            <span class="menu-country__accordion-text"
+                              >Америка</span
+                            >
+                          </button>
+                          <button
+                            class="menu-country__accordion-item"
+                            data-accordion="4"
+                          >
+                            <span class="menu-country__accordion-block">
+                              <svg
+                                class="menu-country__accordion-image"
+                                width="72"
+                                height="104"
+                              >
+                                <use
+                                  xlink:href="local/templates/site/img/sprite.svg#baltic"
+                                />
+                              </svg>
+                            </span>
+                            <span class="menu-country__accordion-text"
+                              >Балтика</span
+                            >
+                          </button>
+                          <button
+                            class="menu-country__accordion-item"
+                            data-accordion="5"
+                          >
+                            <span class="menu-country__accordion-block">
+                              <svg
+                                class="menu-country__accordion-image"
+                                width="102"
+                                height="104"
+                              >
+                                <use
+                                  xlink:href="local/templates/site/img/sprite.svg#island"
+                                />
+                              </svg>
+                            </span>
+                            <span class="menu-country__accordion-text"
+                              >Острова</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="menu-country__wrapper">
+                        <ul class="menu-country__list">
+                          <li class="menu-country__item" data-block="0">
+                            <ul class="menu-country__country-list">
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Австрия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Великобритания</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Германия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Дания</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Израиль</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Испания</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Италия</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Кипр</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Латвия</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Литва</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Мальта</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Нидерланды</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Норвегия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Польша</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Португалия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Турция</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Франция</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Швейцария</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Швеция</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Эстония</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-country__item" data-block="1">
+                            <ul class="menu-country__country-list">
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Австралия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Гонконг</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Индия</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Индонезия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Китай</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Малайзия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Непал</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Новая Зеландия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">ОАЭ</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Сингапур</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Таиланд</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Турция</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Филиппины</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Шри-Ланка</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Япония</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-country__item" data-block="2">
+                            <ul class="menu-country__country-list">
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Алжир</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Ангола</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Бенин</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Ботсвана</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Буркина-Фасо</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Бурунди</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Габон</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Гамбия</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Гана</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Гвинея</a>
+                              </li>
+                              <li class="menu-country__country-item"></li>
+
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Камерун</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Кения</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Либерия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Ливия</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Маврикий</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Мавритания</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Мадагаскар</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Малави</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Мали</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Марокко</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Мозамбик</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Намибия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Нигер</a>
+                              </li>
+
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Сомали</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Судан</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Сьерра-Леоне</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Танзания</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Того</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Тунис</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">Уганда</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Эритрея</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Эсватини</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link"
+                                  >Эфиопия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">ЮАР</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a href="" class="menu-country__link">
+                                  Южный Судан</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-country__item" data-block="3">
+                            <ul class="menu-country__country-list">
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Антигуа и Барбуда</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Аргентина</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Аруба</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Барбадос</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Боливия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Бонайре</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Бразилия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Венесуэла</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Гватемала</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Гренада</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Гренландия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Канада</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Колумбия</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Коста-Рика</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Куба</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Мексика</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Никарагуа</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Парагвай</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Перу</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Сен-Бартелеми</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Соединенные Штаты Америки</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Уругвай</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Чили</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Эквадор</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="menu-country__item" data-block="4">
+                            <ul class="menu-country__country-list">
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Калининград</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Латвия</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Литва</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Польша</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Эстония</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-country__item" data-block="5">
+                            <ul class="menu-country__country-list">
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Антигуа</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Багамы</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Барбадос</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Бермудские острова</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Гваделупа</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Гренада</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Доминиканская республика</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Коморские острова</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href="">Куба</a>
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Кука острова</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Кюрасао</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Маврикий</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Мальдивские острова</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Мартиника</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Новая Каледония</a
+                                >
+                              </li>
+                              <li class="menu-country__country-item">
+                                <a class="menu-country__link" href=""
+                                  >Реюньон</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <span class="navigation__link-text">Туры</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">
+                    <span class="navigation__link-text">Калининград</span>
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link js-menu-link">
+                    <span class="navigation__link-text ">ВИДЫ ОТДЫХА</span>
+                    <svg class="navigation__link-arrow" width="12" height="14">
+                      <use
+                        xlink:href="local/templates/site/img/sprite.svg#select-arrow"
+                      />
+                    </svg>
+                  </a>
+                  <div class="navigation__block menu-relax">
+                    <div class="menu-relax__container">
+                      <div class="menu-relax__list-wrapper">
+                        <ul class="menu-relax__list">
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="29"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#expedition"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Приключенческие<br />туры и экспедиции</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="30"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#exotic"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Экзотические<br />туры</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="35"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#culture"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Культурные<br />столицы мира</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="42"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#tropic"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Тропические<br />острова</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="49"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#cruise"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Морские и речные<br />круизы</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="46"
+                                  height="37"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#railway"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Железнодорожные<br />путешествия</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="59"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#ski"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >Горнолыжные<br />курорты</span
+                              >
+                            </a>
+                          </li>
+                          <li class="menu-relax__item">
+                            <a href="#" class="menu-relax__link">
+                              <span class="menu-relax__icon">
+                                <svg
+                                  class="menu-relax__icon-svg"
+                                  width="31"
+                                  height="36"
+                                >
+                                  <use
+                                    xlink:href="local/templates/site/img/sprite.svg#spa"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="menu-relax__text"
+                                >SPA и Relax<br />туры</span
+                              >
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="menu-relax__slider-wrapper">
+                        <p class="menu-relax__other">Популярные виды отдыха</p>
+                        <div class="menu-relax__slider">
+                          <a href="#" class="menu-relax__slider-item">
+                            <img
+                              class="menu-relax__slider-image"
+                              src="local/templates/site/img/tour/parish.jpg"
+                              alt=""
+                              title=""
+                              width=""
+                              height=""
+                            />
+                            <p class="menu-relax__slider-title">
+                              Умиротворение
+                            </p>
+                            <p class="menu-relax__slider-description">
+                              <span class="menu-relax__slider-day"
+                                >6-14 дней</span
+                              >
+                              <span class="menu-relax__slider-value">,</span>
+                              <span class="menu-relax__slider-city"
+                                >3 города</span
+                              >
+                            </p>
+                            <span class="menu-relax__slider-link"
+                              >Подробнее</span
+                            >
+                          </a>
+                          <a href="#" class="menu-relax__slider-item">
+                            <img
+                              class="menu-relax__slider-image"
+                              src="local/templates/site/img/popular-tour-1.jpg"
+                              alt=""
+                              title=""
+                              width=""
+                              height=""
+                            />
+                            <p class="menu-relax__slider-title">
+                              Неизведанные дали
+                            </p>
+                            <p class="menu-relax__slider-description">
+                              <span class="menu-relax__slider-value"
+                                >горнолыжные курорты</span
+                              >
+                            </p>
+                            <span class="menu-relax__slider-link"
+                              >Подробнее</span
+                            >
+                          </a>
+                          <a href="#" class="menu-relax__slider-item">
+                            <img
+                              class="menu-relax__slider-image"
+                              src="local/templates/site/img/tour/tour-london.jpg"
+                              alt=""
+                              title=""
+                              width=""
+                              height=""
+                            />
+                            <p class="menu-relax__slider-title">Путь война</p>
+                            <p class="menu-relax__slider-description">
+                              <span class="menu-relax__slider-value"
+                                >основные достопримечательности</span
+                              >
+                            </p>
+                            <span class="menu-relax__slider-link"
+                              >Подробнее</span
+                            >
+                          </a>
+                          <a href="#" class="menu-relax__slider-item">
+                            <img
+                              class="menu-relax__slider-image"
+                              src="local/templates/site/img/popular-tour-1.jpg"
+                              alt=""
+                              title=""
+                              width=""
+                              height=""
+                            />
+                            <p class="menu-relax__slider-title">
+                              В погоне за снегом
+                            </p>
+                            <p class="menu-relax__slider-description">
+                              <span class="menu-relax__slider-day">5 дней</span>
+                              <span class="menu-relax__slider-value">,</span>
+                              <span class="menu-relax__slider-city"
+                                >4 города</span
+                              >
+                            </p>
+                            <span class="menu-relax__slider-link"
+                              >Подробнее</span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navigation__list navigation__list__header__bottom">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link navigation__link__сompany">
+                    <span class="navigation__link-text">О компании</span>
+                  </a>
+                </li>
+                <li class="navigation__item navigation__item__contact">
+                  <a
+                    href="communicationForm.html"
+                    class="navigation__link navigation__link--border-dashed contact-link js-popup-id-open"
+                    data-popup="contactPopup"
+                  >
+                    <span class="navigation__link-text">контакты</span>
+                  </a>
+                </li>
+                <li class="navigation__item navigation__item--language-search">
+                  <a
+                    href="search.html"
+                    class="navigation__link navigation__link--search js-popup-id-open"
+                    aria-label="Поиск"
+                    data-popup="searchPopup"
+                  >
+                    <svg class="navigation__link-icon" width="13" height="13">
+                      <use
+                        xlink:href="local/templates/site/img/sprite.svg#search"
+                      />
+                    </svg>
+                    <span class="navigation__link-text">поиск</span>
+                  </a>
+                  <div class="navigation__item--language">
+                    <a
+                      href="#"
+                      class="navigation__link navigation__link__lang  "
+                      aria-label="Рускоязычная версия сайта"
+                    >
+                      <span class="navigation__link-text">RU</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="navigation__link navigation__link__lang"
+                      aria-label="English version site"
+                    >
+                      <span class="navigation__link-text">EN</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

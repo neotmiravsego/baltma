@@ -1,0 +1,6 @@
+.history
+.idea/
+/node_modules/
+public/
+npm
+.vscode/

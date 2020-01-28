@@ -1,0 +1,44 @@
+{
+  "name": "baltma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Maksim Neporada",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "9.5.x",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "node-normalize-scss": "^8.0.0",
+    "node-sass": "^4.13.0",
+    "posthtml-include": "^1.2.0",
+    "posthtml-load-config": "^1.0.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "dependencies": {
+    "csscomb": "^4.3.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

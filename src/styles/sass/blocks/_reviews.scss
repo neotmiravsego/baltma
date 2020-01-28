@@ -1,0 +1,342 @@
+.reviews {
+  width: 100%;
+  position: relative;
+}
+
+.reviews__block-title {
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 100%;
+  z-index: 5;
+  @include media-small-tablet-max {
+    top: 20px;
+  }
+}
+
+.reviews__title {
+  color: $text-color-2;
+  margin-bottom: 0;
+}
+
+.reviews__slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  & .slick-track {
+    display: flex;
+  }
+
+}
+
+.reviews__item {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 158px;
+  padding-bottom: 98px;
+  @include  media-small-tablet-max {
+    padding-top: 82px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: $bg-color-6;
+    opacity: 0.4;
+    z-index: -1;
+  }
+}
+
+.reviews__image-bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.reviews__item-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__photo-block {
+  width: 72px;
+  height: 72px;
+  position: relative;
+  margin-bottom: 24px;
+
+  border: 2px solid $bg-color-1;
+  border-radius: 50%;
+}
+
+.reviews__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.reviews__triangle {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 10px 0 10px;
+  border-color: $bg-color-1 transparent transparent transparent;
+}
+
+.reviews__item-name {
+  @include mp-reset();
+  max-width: 100%;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $text-color-2;
+  text-transform: uppercase;
+}
+
+.reviews__item-about {
+  @include mp-reset();
+  max-width: 100%;
+  margin-bottom: 10px;
+
+  @include font-family-T();
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 41px;
+  text-align: center;
+  color: $text-color-2;
+  @include media-small-mobile-max {
+    font-size: 16px;
+  }
+}
+
+.reviews__item-block {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.reviews__item-text {
+  @include mp-reset();
+  max-width: 100%;
+
+  @include font-family-T();
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: $text-color-2;
+
+  text-decoration: none;
+
+  @include media-small-mobile-max {
+    font-size: 20px;
+  }
+}
+
+.reviews__slider.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.reviews__slider .slick-next,
+.reviews__slider .slick-prev {
+  width: 45px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+}
+
+.reviews__slider .slick-next::before,
+.reviews__slider .slick-prev::before {
+  display: none;
+}
+
+.reviews__slider .slick-next svg,
+.reviews__slider .slick-prev svg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+  stroke: $bg-color-1;
+  stroke-width: 2px;
+}
+
+.reviews__slider .slick-prev {
+  left: 9.514%;
+  left: calc((100% - 1170px) / 2);
+}
+
+.reviews__slider .slick-next {
+  right: 9.514%;
+  right: calc((100% - 1170px) / 2);
+}
+
+.reviews__slider .slick-next svg {
+  transform: rotate(180deg);
+}
+
+.reviews__slider .slick-dots {
+  position: absolute;
+  top: calc(100% - 70px);
+  left: 50%;
+  bottom: auto;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 770px;
+  left: 50%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  @include large-mobile {
+    // top: calc(100% - 140px);
+  }
+
+  @include  media-small-tablet-max {
+    top: calc(100% - 40px);
+  }
+}
+
+.reviews__slider .slick-dots li {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  padding: 0;
+
+  &.slick-active button {
+    background: $bg-color-1;
+    opacity: 1;
+  }
+}
+
+.reviews__slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: transparent;
+  outline: 0;
+  background: 0 0;
+
+  border: 1px solid $bg-color-1;
+  border-radius: 50%;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.reviews__slider .slick-dots li button:before {
+  display: none;
+}
+
+.reviews--without-bg {
+  & .reviews__item::after {
+    display: none;
+  }
+}
+
+.slide-wrap {
+  width: 100%;
+  padding: 28px 35px 35px;
+  max-width: 505px;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-3;
+  background: #ffffff;
+  .slide-wrap__top-bar {
+    display: flex;
+  }
+  .slide-wrap__left-bar {
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 225px;
+    .slide-wrap__title {
+      margin-bottom: 11px;
+      font-size: $font-size-4;
+      font-weight: 700;
+    }
+  }
+  .slide-wrap__right-bar {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    .slide-wrap__data {
+      margin-bottom: 6px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid $bg-color-11;
+    }
+    .slide-wrap__data-days-city {
+      margin-bottom: 6px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid $bg-color-11;
+    }
+    .slide-wrap__price {
+      margin: 0;
+    }
+  }
+  .slide-wrap__button {
+    color: $text-color-2;
+    padding: 11px 47px 13px;
+    border: solid 1px white;
+    border-radius: 0px;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: $bg-color-3;
+    &:hover,
+    &:focus {
+      background-color: $bg-color-4;
+      border-color: $bg-color-4;
+      outline-color: transparent;
+      color: $text-color-2;
+    }
+  }
+}
+

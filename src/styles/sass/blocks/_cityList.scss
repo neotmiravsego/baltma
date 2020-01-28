@@ -1,0 +1,49 @@
+.city-wrap {
+  width: 100%;
+  padding: 0px 0 0px 20px;
+  @include mobile-width-only {
+    padding: 10px 0 28px 20px;
+  }
+  .city-list__wrap {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    @include mobile-width-only {
+      overflow: hidden;
+      overflow-x: scroll;
+    }
+    & .city__list {
+      width: 100%;
+      column-count: 3;
+      column-width: 160px;
+      column-gap: 180px;
+      padding-bottom: 10px;
+      @include media-tablet-max {
+        column-gap: 40px;
+
+        // padding: 0 100px;
+      }
+      @include mobile-width-only {
+        width: 600px;
+        column-gap: 0px;
+        margin: 0 auto;
+      }
+
+      &.list--flex-column {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+      }
+      & .city__list__item {
+        :hover {
+          color: $text-color-4;
+        }
+        .city__list__item__link {
+          text-decoration: none;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.sub-slider {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  top: -150px;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+//@include desktop-width {
+//  width: 100%;
+//}
+  @include large-tablet-width {
+    width: auto;
+  }
+  @include mobile-width-only {
+    width: auto;
+    // padding: 0 0 0 20px;
+  }
+
+  @media screen and (max-width: $small-tablet-max-width) {
+    top: 0;
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+
+
+  & .slick-list,
+  & .slick-track {
+    @media all and (min-width: 1200px) {
+      min-width: 100%;
+      display: flex;
+    }
+  }
+}
+
+.sub-slider__item {
+  width: 195px;
+  border-bottom: 1px solid $bg-color-5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  flex: 1 0;
+
+  &:hover {
+    border-bottom: 1px solid $bg-color-3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    right: 0;
+    height: 1px;
+    background: $bg-color-1;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: 0.3s all ease;
+    z-index: 1;
+  }
+}
+
+.sub-slider__text {
+  @include mp-reset();
+  padding: 5px 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: $text-color-2;
+  text-transform: uppercase;
+}
+
+.sub-slider__item.slick-slide {
+  &:focus {
+    outline-color: transparent;
+  }
+}
+
+.sub-slider__item.slick-current {
+  &::after {
+    width: 100%;
+  }
+}
+
+
+@media all and (max-width: $desktop-max-width) {
+  .sub-slider {
+    width: 950px;
+  }
+}
+
+@media all and (max-width: $tablet-max-width) {
+  .sub-slider {
+    width: 100%;
+  }
+}

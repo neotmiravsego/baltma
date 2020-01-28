@@ -1,0 +1,400 @@
+.tour {
+  width: 100%;
+  // padding-top: 16px;
+  // padding-bottom: 48px;
+  position: relative;
+
+  overflow-x: hidden;
+  @include mobile-width-only {
+    padding: 0;
+  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 100%;
+  //   left: 50%;
+  //   z-index: 2;
+  //   margin-left: -16px;
+
+  //   width: 0;
+  //   height: 0;
+  //   border-style: solid;
+  //   border-width: 24px 32px 0 32px;
+  //   border-color: $bg-color-1 transparent transparent transparent;
+  // }
+}
+
+.tour__map {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 0;
+  @include mobile-width-only {
+    height: 400px;
+    position: relative;
+  }
+  &.bottom {
+    bottom: 0;
+    top: auto;
+  }
+  &.fixed {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    @include mobile-width-only {
+      position: relative;
+      top: 0;
+    }
+  }
+  @include mobile-width-only {
+    position: relative;
+  }
+}
+
+.tour__block {
+  width: 50vw;
+  margin-left: auto;
+  height: auto;
+
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+
+  position: relative;
+  z-index: 1;
+  counter-reset: item_number;
+
+  @include media-desktop-max() {
+    width: 55vw;
+  }
+
+  @include media-small-tablet-max() {
+    width: 100%;
+    padding: 0;
+    margin-top: -150px;
+  }
+
+  @include media-mobile-max() {
+    width: 100%;
+    padding: 0;
+    margin-top: -60px;
+  }
+}
+
+.tour__city {
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0;
+  background: transparent;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  //@include large-mobile {
+  //  padding-bottom: 0;
+  //  box-shadow: none;
+  //  background: #efefef;
+  //}
+
+
+}
+
+.tour__image-block {
+  width: 100%;
+  height: 410px;
+
+  overflow: hidden;
+
+  display: flex;
+
+
+  @include media-desktop-max(){
+    height: 350px;
+  }
+
+  @include media-tablet-max() {
+    height: 300px;
+  }
+
+  @include media-small-tablet-max(){
+    height: 300px;
+    padding: 0 20px;
+   }
+
+  @include media-mobile-max(){
+    height: 200px;
+  }
+  //@include large-mobile {
+  //  height: 100%;
+  //}
+  //@include mobile-width-only {
+  //  padding: 30px 20px 0px;
+  //}
+}
+
+.tour__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.tour__title-block {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  padding: 0 33px 30px;
+  background: white;
+
+  @include media-small-tablet-max(){
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+
+    padding: 0 40px 20px;
+  }
+}
+
+.tour__number-city {
+  display: block;
+  position: absolute;
+  top: 37px;
+  left: -18px;
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  background: $bg-color-4;
+  //@include large-mobile {
+  //  left: 7px;
+  //  width: 21px;
+  //  height: 21px;
+  //  bottom: 0;
+  //  top: 22px;
+  //}
+
+
+  &::after {
+    counter-increment: item_number;
+    content: counter(item_number);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -11px);
+    @include font-family-T();
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $text-color-2;
+    //@include large-mobile {
+    //  font-size: 11px;
+    //}
+
+    @include media-small-tablet-max(){
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  @include media-small-tablet-max(){
+    top: 22px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.tour__title {
+  @include mp-reset();
+
+  @include font-family-T();
+
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 102px;
+  text-align: left;
+  color: $text-color-4;
+
+  @include media-small-tablet-max(){
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+.tour__sub-title {
+  @include mp-reset();
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  color: $text-color-3;
+}
+
+.tour__info-block {
+  width: 100%;
+  height: auto;
+  padding-bottom: 35px;
+  background: white;
+  position: relative;
+  z-index: 2;
+}
+.tour__info-block__next {
+  //@include mobile-width-only {
+  //  padding-bottom: 30px;
+  //}
+}
+.tour__tabs {
+  width: 100%;
+  padding-bottom: 32px;
+  background: white;
+  //@include large-mobile {
+  //  padding-bottom: 14px;
+  //  background: white;
+  //}
+
+  @include media-small-tablet-max() {
+    padding-bottom: 20px;
+  }
+}
+
+.tour__tabs-list {
+  @include list-reset();
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid $bg-color-2;
+
+  @include media-mobile-max() {
+    justify-content: center;
+  }
+}
+
+.tour__tabs-item {
+  width: auto;
+  margin: 0 33px;
+
+  @include media-mobile-max() {
+    margin: 0 15px;
+  }
+}
+
+.tour__tabs-link {
+  @include button-reset();
+  position: relative;
+  width: auto;
+  padding: 5px 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: $text-color-6;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    width: 0;
+    right: 0;
+    height: 2px;
+    background: $bg-color-4;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: 0.3s all ease;
+    z-index: 1;
+  }
+
+  &.active,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $text-color-4;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline-color: transparent;
+  }
+
+  &.active::after {
+    width: 100%;
+  }
+}
+
+.tour__info-wrapper {
+  width: 100%;
+  padding: 0 33px;
+  background: white;
+  @include large-mobile {
+    padding: 0 20px;
+  }
+}
+
+.tour__info {
+  width: 100%;
+}
+
+.placemark-layout__container {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $bg-color-1;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $bg-color-4;
+
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+
+  &.hover,
+  &.active {
+    background-color: $bg-color-4;
+  }
+
+  &.hover .circle__layout,
+  &.active .circle__layout {
+    color: $text-color-2;
+  }
+}
+
+.hoverPlacemark .placemark-layout__container {
+  background-color: $bg-color-4;
+}
+
+.circle__layout {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $text-color-4;
+  transition: 0.2s;
+}
+
+//.container-other-tours {
+//  @include large-tablet-width {
+//    max-width: 850px;
+//  }
+//  @include large-mobile {
+//    max-width: 100%;
+//  }
+//}

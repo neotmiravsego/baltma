@@ -1,0 +1,51 @@
+.horizontal-scroller {
+padding-bottom: 8px;
+  position: relative;
+}
+
+.horizontal-scroller__body {
+
+}
+
+.horizontal-track {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 8px;
+
+  z-index: 7;
+
+}
+
+.horizontal-scroller._scrollbar .horizontal-track {
+  display: block;
+
+}
+
+.horizontal-bar {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  z-index: 1;
+
+  border-radius: 0;
+  background: $bg-color-5;
+
+  opacity: 0.7;
+}
+
+.horizontal-scroller._scrollbar .horizontal-bar {
+  display: block;
+}
+
+.horizontal-scroller__body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

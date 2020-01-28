@@ -1,0 +1,49 @@
+.booking-tour {
+  @include section-p();
+  padding-bottom: 70px;
+  background-color: $bg-color-9;
+
+  position: relative;
+  & .triangle {
+     background-color: transparent;
+   }
+
+  & .triangle__left,
+  & .triangle__right {
+    background-color: $bg-color-9;
+  }
+  @include large-mobile {
+    padding-top: 20px;
+    padding-bottom:35px;
+  }
+}
+
+.booking-tour__sub-title {
+  color: $text-color-2;
+}
+
+.booking-tour__wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.booking-tour__form {
+  width: 100%;
+}
+
+.booking-tour .form__checkbox-wrapper {
+  justify-content: center;
+}
+
+.booking-tour .form__checkbox-label,
+.booking-tour .form__button {
+  width: auto;
+}
+
+.booking-tour__title {
+  @include large-mobile {
+    line-height: 27px;
+  }
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <include src="src/html-const/head.html"></include>
+    <title>Главная</title>
+</head>
+<body>
+<include src="src/html-const/header.html"></include>
+<div class="tour">
+    <div class="title-block">
+        <div
+                class="title-block__wrapper"
+                data-parallax="scroll"
+                data-mirror-container=".title-block__wrapper"
+                data-image-src="local/templates/site/img/mountainRemote/mountainBanner.png"
+                data-position="center top"
+                style="background-image:url('local/templates/site/img/mountainRemote/mountainBanner.png');"
+        >
+            <div class="container">
+                <div class="breadcrumb">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumb__item">
+                            <a href="#" class="breadcrumb__link"
+                            >Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                  <span class="breadcrumb__link">
+                      <svg
+                              class="breadcrumbs__img"
+                              width="11.85"
+                              height="20"
+                      >
+                        <use
+                                xlink:href="local/templates/site/img/sprite.svg#right-arrow-breadcrumbs"
+                        />
+                      </svg>
+                  </span>
+                        </li>
+                        <li class="breadcrumbs__list__item breadcrumb__item">
+                            <span class="breadcrumb__link">Горнолыжные курорты</span>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="tours__title">Thermenhotel Pulverer</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="city-content__txt__wrap">
+        В последние годы горнолыжные курорты переживают бурный ренессанс в
+        северном Китае, Южной Корее и Индии, и благодаря росту этого вида спорта
+        во всей Азии, существует больше возможностей, чем когда-либо, для
+        слалома на склонах Востока.
+        <div class="content-more">
+            Австрия туристическая предоставляет неограниченные возможности для
+            проведения отпуска круглый год: множество уютных долин, окруженных
+            горными хребтами, мягкий климат и нетронутая природа создают
+            прекрасные возможности для активного отдыха. Зимой туристы приезжают
+            сюда не только чтобы насладиться красотой Вены, но и покататься на
+            австрийских горнолыжных курортах. Летом тысячи любителей австрийской
+            ривьеры направляются в Каринтию — край кристально чистых теплых
+            озер, прекрасно подходящий для семейного отдыха… Горы и озера;
+            многочисленные прекрасные ландшафты; замки, дворцы и монастыри;
+            исторические города; разнообразная кухня, а также театры, опера,
+            концертные залы; доброжелательные люди; возможности занятий
+            физкультурой и спортом, отдыха всей семьей — все это Вы найдете
+            именно в Австрии. Страна снежных полей и скалистых гор, приветливых
+            и гостеприимных людей, пивных пирушек и веселья до утра, родина
+            Шнапса и Глювайна — ждет вас!
+        </div>
+        <button class="show-more__link" onclick="readMore($(this).parent())">
+            Показать ещё...
+        </button>
+    </div>
+
+    <div class="navigation__wrap">
+        <nav class="navigation__cities-wrap">
+            <ul class="navgitaion__list__cities">
+                <li class="navigation__list__item">
+                    <a href="#hotelCity" class="navigation__link__item">Города</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#toursCite" class="navigation__link__item">Туры</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#photo" class="navigation__link__item">фотоархив</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="information-block">
+    <div class="resort-cities-container  js-navigation-block"  id="hotelCity">
+        <div class="container">
+            <div class="hotel-city__title">
+                <div class="hotel-city__img-wrap">
+                    <div class="cities-austria__img-wrap">
+                        <img
+                                src="local/templates/site/img/austria/cityLg.png"
+                                alt=""
+                                class="cities-austria__img"
+                        />
+                    </div>
+                    Города
+                    <span class="hotel-city__title_color">для лыжного катания</span>
+                </div>
+            </div>
+            <div class="resort-cities-list__container horizontal-scroller">
+                <div class="resort-cities-wrap__lists horizontal-scroller__body">
+                    <div class="resort-cities__list-wrap">
+                        <p class="resort-cities__title">Австрия</p>
+                        <ul class="resort-cities__list">
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Бад-Хофгаcтайн</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Бадгастайн</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Зёльден</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"
+                                >Заальбах / Хинтерглем</a
+                                >
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Зеефельд</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Иглс</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Инсбрук</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Ишгль</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Кицбюэль</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Лех</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Майрхофен</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Нойштифт/Фульпмес</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Ст. Антон</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Целль-ам-Зе/Капрун</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Шладминг</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resort-cities__list-wrap">
+                        <p class="resort-cities__title">Франция</p>
+                        <ul class="resort-cities__list">
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Валь ДИзер </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Валь-Торан </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Д Уэ </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Куршевель</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"
+                                >Ле Менуир/Сан-Мартен-де-Бельвиль
+                                </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Ле-Ду-Альп</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">
+                                    Лез Арк/Бург Сан Морис</a
+                                >
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Межев</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Мерибель</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Тинь</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Шамони</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resort-cities__list-wrap">
+                        <p class="resort-cities__title">Италия</p>
+                        <ul class="resort-cities__list">
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Бормио</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Кортина дАмпеццо </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Курмаер</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">
+                                    Мадонна Ди Кампильо
+                                </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">
+                                    Сельва ди Валь Гардена
+                                </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Червиния</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                            class="resort-cities__list-wrap resort-cities__list-wrap__last"
+                    >
+                        <p class="resort-cities__title">Швейцария</p>
+                        <ul class="resort-cities__list">
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Вербье</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Гриндельвальд </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Гштаад</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Давос</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link">Интерлакен</a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Кранс-Монтана </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Саас Фе </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Санкт-Мориц </a>
+                            </li>
+                            <li class="resort-cities__list__item">
+                                <a href="#" class="resort-cities__link"> Церматт</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="horizontal-track">
+                    <div class="horizontal-bar"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="main__container-directions-populars js-navigation-block" id="toursCite">
+        <div class="container">
+            <h2 class="main-title main-route__title">Популярные горнолыжные Туры</h2>
+            <div class="populars__directions">
+            <div class="populars__directions__left-bar">
+                <a class="populars__directions__card " href="#">
+                    <img
+                            class="populars__directions__img"
+                            src="local/templates/site/img/mountainRemote/popularsTourLeft.png"
+                            width="570"
+                            height="483"
+                    />
+                    <div class="populars__directions__description">
+                        <h3 class="populars__directions__title">
+                            Исторический маршрут
+                        </h3>
+                        <p class="populars__directions__description__title">
+                            5 дней, 4 города
+                        </p>
+                        <button class="populars__directions__card__button">
+                            подробнее
+                        </button>
+                    </div>
+                    <div class="filter__dark"></div>
+                </a>
+            </div>
+            <div class="populars__directions__right-bar">
+                <a class="populars__directions__card " href="#">
+                    <img
+                            class="populars__directions__img"
+                            src="local/templates/site/img/mountainRemote/popularsTourRight.png"
+                            width="570"
+                            height="223"
+                    />
+                    <div class="populars__directions__description">
+                        <h3 class="populars__directions__title">
+                            Исторический маршрут
+                        </h3>
+                        <p class="populars__directions__description__title">
+                            5 дней, 4 города
+                        </p>
+                        <button class="populars__directions__card__button">
+                            подробнее
+                        </button>
+                    </div>
+                    <div class="filter__dark"></div>
+                </a>
+                <a class="populars__directions__card " href="#">
+                    <img
+                            class="populars__directions__img"
+                            src="local/templates/site/img/mountainRemote/popularsTourRightB.png"
+                            width="570"
+                            height="223"
+                    />
+                    <div class="populars__directions__description">
+                        <h3 class="populars__directions__title">
+                            Исторический маршрут
+                        </h3>
+                        <p class="populars__directions__description__title">
+                            5 дней, 4 города
+                        </p>
+                        <button class="populars__directions__card__button">
+                            подробнее
+                        </button>
+                    </div>
+                    <div class="filter__dark"></div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section class="other-tours">
+        <div class="container container-other-tours">
+            <h2 class="main-title other-tours__title">Все горнолыжные туры</h2>
+            <div class="other-tours__container">
+                <div class="other-tours__form-block  pick-tours">
+                    <form class="pick-tours__form ">
+                        <div class="pick-tours__fieldset">
+                            <div class="pick-tours__select select">
+                                    <span class="select__placeholder" aria-label="Выпадающий список" tabindex="0">
+                                        <span class="value">направление</span>
+                                        <span class="select__placeholder-svg">
+                                            <svg width="12" height="8">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                <div class="select__scrollbar">
+                                    <div class="select__body">
+                                        <a class="select__item" data-value="europe" tabindex="0">Европа</a>
+                                        <a class="select__item" data-value="asia" tabindex="0">Азия</a>
+                                        <a class="select__item" data-value="africa" tabindex="0">Африка</a>
+                                        <a class="select__item" data-value="america" tabindex="0">Америка</a>
+                                        <a class="select__item" data-value="australia" tabindex="0">Австралия</a>
+                                        <a class="select__item" data-value="island" tabindex="0">Острова</a>
+                                        <a class="select__item" data-value="all" tabindex="0">Все направления</a>
+                                    </div>
+                                    <div class="select__track">
+                                        <div class="select__bar"></div>
+                                    </div>
+                                </div>
+                                <label class="visually-hidden">
+                                    <input class="visually-hidden" type="text" name="Country" hidden tabIndex="-1"
+                                           placeholder="NoTabIndex" value="all">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <div class="pick-tours__select select">
+                                    <span class="select__placeholder" aria-label="Выпадающий список" tabindex="0">
+                                        <span class="value">Тип тура</span>
+                                        <span class="select__placeholder-svg">
+                                            <svg width="12" height="8">
+                                                <use xlink:href="local/templates/site/img/sprite.svg#select-arrow" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                <div class="select__scrollbar">
+                                    <div class="select__body">
+                                        <a class="select__item" data-value="Adventure" tabindex="0">Приключенческий
+                                            тур и экспедиции</a>
+                                        <a class="select__item" data-value="Exotic" tabindex="0">Экзотический
+                                            тур</a>
+                                        <a class="select__item" data-value="Cultural" tabindex="0">Культурные
+                                            столицы мира</a>
+                                        <a class="select__item" data-value="Tropical" tabindex="0">Тропические
+                                            острова</a>
+                                        <a class="select__item" data-value="Marine" tabindex="0">Морские и речные
+                                            круизы</a>
+                                        <a class="select__item" data-value="Rail" tabindex="0">Железнодорожные
+                                            путешествия</a>
+                                        <a class="select__item" data-value="Alpine" tabindex="0">Горнолыжные
+                                            курорты</a>
+                                        <a class="select__item" data-value="SPA" tabindex="0">SPA и Relax
+                                            тур</a>
+                                        <a class="select__item" data-value="all" tabindex="0">Все туры</a>
+                                    </div>
+                                    <div class="select__track">
+                                        <div class="select__bar"></div>
+                                    </div>
+                                </div>
+                                <label class="visually-hidden">
+                                    <input class="visually-hidden" type="text" name="tours" hidden tabIndex="-1"
+                                           placeholder="NoTabIndex" value="all">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <label class="pick-tours__label">
+                                <input class="pick-tours__date js-date-picker" type="text" placeholder="Период">
+                                <span class="pick-tours__icon">
+                                        <svg class="pick-tours__svg" width="18" height="20">
+                                            <use xlink:href="local/templates/site/img/sprite.svg#calendar" />
+                                        </svg>
+                                    </span>
+                            </label>
+                        </div>
+                        <div class="pick-tours__fieldset">
+                            <button class="pick-tours__button button">Подобрать тур</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="other-tours__wrapper">
+                    <div class="other-tours__sort-country sort-country">
+                        <ul class="sort-country__list">
+                            <li class="sort-country__item active">
+                                <a href="#" class="sort-country__link">Все страны</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Австрия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Германия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Греция</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Дания</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Испания</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Италия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Латвия</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Литва</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Мальта</a>
+                            </li>
+                            <li class="sort-country__item">
+                                <a href="#" class="sort-country__link">Нидерланды</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="other-tours__list">
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/mountainRemote/mountainsBg.png"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                                    <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">5 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">34 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/mountainRemote/Aboutmountains.png"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">В самом сердце Европы</h3>
+                                    <p class="tour-cart__date">2–20 Мая, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">18 дней</p>
+                                        <p class="tour-cart__city">8 городов</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">70 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/mountainRemote/Aboutmountainsadd.png"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Прогулки на свежем воздухе</h3>
+                                    <p class="tour-cart__date">5–12 Июня, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">4 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">48 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/mountainRemote/bgmountainsCard4.png"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Самые красивые города Европы</h3>
+                                    <p class="tour-cart__date">1–5 Апреля, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">5 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">34 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/mountainRemote/bgmountainsCard.png"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">В самом сердце Европы</h3>
+                                    <p class="tour-cart__date">2–20 Мая, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">18 дней</p>
+                                        <p class="tour-cart__city">8 городов</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">70 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="other-tours__item tour-cart">
+                            <a href="#" class="tour-cart__link">
+                                <div class="tour-cart__image-block">
+                                    <img class="tour-cart__image"
+                                         src="local/templates/site/img/mountainRemote/bgmountainsCard6.png"
+                                         alt="Самые красивые города Европы" title="города Европы" width="370"
+                                         height="205">
+                                </div>
+                                <div class="tour-cart__block">
+                                    <h3 class="tour-cart__title">Прогулки на свежем воздухе</h3>
+                                    <p class="tour-cart__date">5–12 Июня, 2019</p>
+                                    <div class="tour-cart__time-city">
+                                        <p class="tour-cart__time">4 дней</p>
+                                        <p class="tour-cart__city">3 города</p>
+                                    </div>
+                                    <p class="tour-cart__cost">
+                                        <span class="tour-cart__value">48 000</span>
+                                        <span class="tour-cart__currency">₽</span>
+                                    </p>
+                                    <span class="tour-cart__button button">Подробнее</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="other-tours__block-button">
+                        <a href="#" class="other-tours__button button">
+                            <svg class="other-tours__button-icon" width="10" height="12">
+                                <use xlink:href="local/templates/site/img/sprite.svg#reload" />
+                            </svg>
+                            <span class="other-tours__button__value">Показать ещё</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-tour">
+        <span class="triangle">
+          <span class="triangle__left"></span>
+          <span class="triangle__right"></span>
+        </span>
+        <div class="photo-archive__container js-navigation-block" id="photo">
+            <div class="photo-archive__content">
+                <div class="photo-archive__content-txt">
+                    <p class="photo-archive__title-top">Наш фотоархив</p>
+                    <p class="photo-archive__title-bottom">
+                        посещения горнолыжных трасс
+                    </p>
+                </div>
+                <div class="photo-archive__slide-arrow-wrap">
+                    <a href="#" class="back__slide">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoArchiveLeft.png"
+                                alt=""
+                                class="photo-archive__slide__left"
+                        />
+                    </a>
+                    <a href="#" class="next__slide" >
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoArchiveRight.png"
+                                alt=""
+                                class="photo-archive__slide__right"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="photo-archive__list-wrap">
+                <ul class=" photo-archive__list__mountain">
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive1.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive2.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive3.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive3.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive3.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive3.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                    <li class="photo-archive__list__item">
+                        <img
+                                src="local/templates/site/img/mountainRemote/photoarchive3.png"
+                                alt=""
+                                class="photo-archive__item__img"
+                        />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<include src="src/html-const/scripts.html"></include>
+<include src="src/html-const/footer.html"></include>
+</body>
+</html>

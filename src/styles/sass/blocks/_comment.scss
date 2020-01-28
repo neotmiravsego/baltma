@@ -1,0 +1,125 @@
+.comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment__photo-block {
+  width: 72px;
+  height: 72px;
+  position: relative;
+  margin-bottom: 24px;
+
+  border: 2px solid $bg-color-1;
+  border-radius: 50%;
+}
+.comment__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.comment__triangle {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 10px 0 10px;
+  border-color: $bg-color-1 transparent transparent transparent;
+}
+
+.comment__name {
+  @include mp-reset();
+  max-width: 100%;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $text-color-2;
+  text-transform: uppercase;
+}
+
+.comment__about {
+  @include mp-reset();
+  max-width: 100%;
+  margin-bottom: 23px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $text-color-2;
+}
+
+.comment__block {
+  margin-bottom: 60px;
+  padding: 0 100px;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  @include media-tablet-max() {
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+}
+
+.comment__quote {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: auto;
+
+  & svg {
+    fill: $bg-color-1;
+    opacity: 0.5;
+  }
+}
+
+.comment__quote--left {
+  left: 0;
+  top: 0;
+  @include media-tablet-max() {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.comment__quote--right {
+  right: 0;
+  bottom: 0;
+  @include media-tablet-max() {
+
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.comment__text {
+  @include mp-reset();
+  width: 100%;
+
+  @include font-family-T();
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: $text-color-2;
+  @include media-desktop-max {
+    font-size: 20px;
+  }
+  @include media-mobile-max{
+    font-size: 16px;
+  } 
+}

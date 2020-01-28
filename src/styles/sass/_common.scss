@@ -1,0 +1,434 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  font-family: "DejaVu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: $text-color-1;
+  overflow-x: hidden;
+  background: $bg-color-1;
+}
+
+body.no-scroll-no-fixed {
+  overflow: hidden;
+  /*position: fixed;*/
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+main {
+  min-height: calc(100vh - 470px);
+}
+
+main.main {
+  padding-top: 0;
+}
+
+.blur-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.triangle {
+  position: absolute;
+  bottom: calc(100% - 1px);
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 11px;
+  z-index: 1;
+  background: inherit;
+  background-size: 0;
+
+  overflow-x: hidden;
+}
+
+.triangle__left,
+.triangle__right {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  transform-origin: 0 100%;
+  background: inherit;
+  background-size: 0;
+  overflow: hidden;
+
+  transform: skewX(55deg);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    background-size: cover;
+    transform-origin: 0 100%;
+    transform: skewX(-55deg);
+  }
+}
+
+.triangle__right {
+  right: 0;
+  left: 50%;
+  transform: skewX(-55deg);
+  &::after {
+    transform: skewX(55deg);
+  }
+}
+
+.filter__dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $bg-color-6;
+  opacity: 0.25;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: -1;
+  border-radius: 0;
+}
+.filter__dark:hover {
+  opacity: 0.35;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index:1;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1190px;
+  }
+}
+
+
+
+
+// показать ещё
+.bread__hotel__list {
+  @include mobile-width-only {
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 350px;
+  }
+}
+// ссылка отеля
+// media
+
+// смотреть ещё
+.show-more__link {
+  padding: 0;
+  position: relative;
+
+  color: black;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  &::after {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px dashed $text-color-3;
+  }
+}
+.show-more__Link:focus {
+  outline: none;
+}
+.show-more__link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.show-full {
+  color: $text-color-4;
+
+  font-weight: 700;
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $text-color-4;
+  }
+}
+
+// кнопка подробнее
+.populars__directions__card__button {
+  color: $text-color-2;
+  padding: 11px 47px 13px;
+  border: solid 1px white;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  &:hover,
+  &:focus {
+    background-color: $bg-color-4;
+    border-color: $bg-color-4;
+    outline-color: transparent;
+    color: $text-color-2;
+  }
+}
+
+// вынести
+.all-mountains-tour-container {
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 1170px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .pick-tours__form {
+    margin-bottom: 34px;
+  }
+  .main-all-directions__list-wrap {
+    max-width: 1170px;
+  }
+  @include desktop-width {
+    padding: 0 20px;
+  }
+  .main__all__directions__title__wrap {
+    margin-bottom: 30px;
+
+    text-align: center;
+    color: $text-color-4;
+    text-transform: uppercase;
+    @include mobile-width-only {
+      margin-bottom: 0px;
+    }
+  }
+  &__title {
+    margin: 62px 0 0;
+    font-size: 24px;
+    @include mobile-width-only {
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+  .main__all__directions__list {
+    @include desktop-width {
+      justify-content: center;
+    }
+    @include list-reset();
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    @include large-tablet-width {
+      justify-content: center;
+      margin: 0;
+    }
+    @include mobile-width-only {
+      margin: 0;
+    }
+    &__item {
+      padding: 0 15px;
+      margin-bottom: 35px;
+      @include desktop-width {
+        padding: 0 10px;
+      }
+      @include mobile-width-only {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    @include mobile-width-only {
+      flex-direction: column;
+    }
+  }
+}
+.main__container-directions-all {
+  width: 100%;
+  padding: 0 0 70px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: $bg-color-7;
+  @include mobile-width-only {
+    padding: 26px 20px 70px;
+  }
+}
+//
+//.main__container-directions-populars {
+//  @include desktop-width {
+//    padding: 0 20px;
+//  }
+//  @include large-tablet-width {
+//    padding: 0 20px;
+//  }
+//  @include mobile-width-only {
+//    padding: 0 20px;
+//  }
+//  .populars__directions {
+//    @include mobile-width-only {
+//      flex-direction: column;
+//    }
+//  }
+//}
+//.pick-tours__form {
+//  @include large-tablet-width {
+//    padding: 0 20px;
+//    margin: 0;
+//    width: 100%;
+//  }
+//  @include mobile-width-only {
+//    margin: 0;
+//    width: 100%;
+//    flex-direction: column;
+//  }
+//  .pick-tours__fieldset {
+//    @include desktop-width {
+//      width: 50%;
+//      padding: 0 20px;
+//    }
+//    @include large-tablet-width {
+//      width: 50%;
+//      padding: 0 20px;
+//    }
+//    @include mobile-width-only {
+//      width: 100%;
+//      padding: 0;
+//    }
+//  }
+//}
+.all-tours__item {
+  width: 100%;
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.information-block {
+  @include  section-p();
+  background-color: $bg-color-7;
+  width: 100%;
+  padding-bottom: 0;
+
+  @include media-tablet-max {
+    padding-bottom: 0;
+  }
+
+  @include media-small-tablet-max {
+    padding-bottom: 0;
+
+  }
+
+    & .hotel-city__wrap {
+    padding-top: 0;
+  }
+
+  & .country-overview {
+    padding-top: 0;
+  }
+
+  & .additional__information {
+    padding-top: 0;
+  }
+
+  & .cities-austria {
+    padding-top: 0;
+  }
+
+  & .resort-cities-container {
+    padding-top: 0;
+  }
+}
+
+.fancybox-bg {
+  background: rgba(255,255,255,0.95);
+}

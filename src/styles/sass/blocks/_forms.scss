@@ -1,0 +1,227 @@
+.form {
+  width: auto;
+  height: auto;
+  min-width: 275px;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -34px;
+  @include media-mobile-max {
+    min-width: auto;
+    margin-top: -25px;
+  }
+}
+
+.form__fieldset {
+  width: 100%;
+  margin-top: 34px;
+
+  @include media-mobile-max {
+    margin-top: 25px;
+  }
+}
+
+.form__fieldset--button {
+  margin-top: 40px;
+  @include large-mobile {
+    margin-top: 12px;
+  }
+}
+
+.form__wrapper {
+  width: 100%;
+}
+
+.form__label-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 13px 15px;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: $text-color-2;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: left;
+
+  border: 0;
+  border-bottom: 1px solid $bg-color-1;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  outline-color: transparent;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline-color: transparent;
+    border-color: $bg-color-4;
+  }
+
+  &:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: $text-color-2;
+    background: transparent;
+  }
+}
+
+.form__textarea {
+  max-width: 100%;
+  min-height: 46px;
+  white-space: pre-wrap;
+  resize: none;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+}
+
+.form__textarea-div {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+
+
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: $text-color-2;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.form__input::-moz-placeholder,
+.form__textarea::-moz-placeholder {
+  color: inherit; /* Цвет подсказывающего текста */
+}
+
+.form__input::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form__input:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
+  color: inherit;
+}
+
+.form__input::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
+  color: inherit;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: inherit;
+}
+
+.form__button {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+
+  align-self: center;
+}
+
+.form__checkbox-wrapper {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.form__checkbox-label {
+  margin: 30px 20px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  @include large-mobile {
+    margin: 30px 10px;
+  }
+}
+
+.form__checkbox {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border: 1px solid $bg-color-4;
+  border-radius: 0;
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
+
+.form__checkbox-check {
+  fill: $bg-color-4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-5px, -3px);
+
+  opacity: 0;
+  transition: 0.3s all linear;
+}
+
+.form__checkbox-title {
+  margin: 0;
+  padding: 0;
+  width: auto;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: left;
+  color: $text-color-6;
+
+  transition: all 0.4s linear;
+}
+
+.form__checkbox-title a {
+  font: inherit;
+  color: $text-color-6;
+  text-decoration: underline;
+  &:hover {
+    color: $text-color-4;
+    text-decoration: none;
+  }
+}
+
+.form__checkbox-label input:checked ~ .form__checkbox .form__checkbox-check {
+  opacity: 1;
+}
